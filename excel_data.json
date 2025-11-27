@@ -1,0 +1,856 @@
+{
+  "Sniper": {
+    "Base": {
+      "Rifle": {
+        "Essence": 6,
+        "Fur": 6,
+        "OdoSinew": 4,
+        "OdoFang": 4,
+        "OdoShard": 2,
+        "OdoMantle": 2
+      },
+      "Helm": {
+        "OdoFang": 4,
+        "OdoScale": 4,
+        "OdoShard": 2,
+        "OdoMantle": 2
+      },
+      "Cape": {
+        "Essence": 5,
+        "Fur": 5,
+        "OdoSinew": 3,
+        "OdoFang": 3
+      },
+      "Mail": {
+        "Fur": 5,
+        "OdoSinew": 3,
+        "OdoScale": 3
+      },
+      "Vambrace": {
+        "Essence": 5,
+        "OdoScale": 3
+      }
+    },
+    "Dreadwood": {
+      "Rifle": {
+        "Essence": 3,
+        "OdoSinew": 3,
+        "OdoFang": 3,
+        "OdoShard": 2
+      },
+      "Helm": {
+        "Fur": 3,
+        "OdoScale": 3,
+        "OdoMantle": 2
+      },
+      "Cape": {
+        "Essence": 3,
+        "OdoFang": 3
+      },
+      "Mail": {
+        "Fur": 3,
+        "OdoSinew": 3
+      },
+      "Vambrace": {
+        "OdoScale": 3
+      }
+    },
+    "Foxfire": {
+      "Rifle": {
+        "Essence": 4,
+        "Fur": 4,
+        "OdoSinew": 3,
+        "OdoFang": 3,
+        "ZinFur": 2,
+        "OdoShard": 1,
+        "OdoMantle": 2
+      },
+      "Helm": {
+        "OdoFang": 3,
+        "OdoScale": 3,
+        "ZinShocker": 2,
+        "OdoShard": 1,
+        "OdoMantle": 1
+      },
+      "Cape": {
+        "Essence": 4,
+        "Fur": 4,
+        "OdoSinew": 3,
+        "OdoScale": 3,
+        "ZinCortex": 4
+      },
+      "Mail": {
+        "Fur": 4,
+        "OdoSinew": 3,
+        "ZinShocker": 2,
+        "OdoShard": 1
+      },
+      "Vambrace": {
+        "Essence": 4,
+        "OdoFang": 3,
+        "OdoScale": 3,
+        "ZinFur": 2
+      }
+    },
+    "Prismatic": {
+      "Rifle": {
+        "Essence": 7,
+        "Fur": 7,
+        "OdoSinew": 4,
+        "OdoFang": 4,
+        "ZinFur": 3,
+        "OdoShard": 2,
+        "OdoMantle": 4,
+        "PrismaticPigment": 1
+      },
+      "Helm": {
+        "OdoFang": 4,
+        "OdoScale": 4,
+        "ZinShocker": 3,
+        "OdoShard": 2,
+        "OdoMantle": 2,
+        "PrismaticPigment": 1
+      },
+      "Cape": {
+        "Essence": 5,
+        "Fur": 5,
+        "OdoSinew": 4,
+        "OdoScale": 4,
+        "ZinCortex": 6,
+        "ZinHorn": 3
+      },
+      "Mail": {
+        "Fur": 5,
+        "OdoSinew": 4,
+        "ZinShocker": 3,
+        "OdoShard": 2,
+        "ZinSky": 3
+      },
+      "Vambrace": {
+        "Essence": 5,
+        "OdoFang": 4,
+        "OdoScale": 4,
+        "ZinFur": 3
+      }
+    }
+  },
+  "Techies": {
+    "Base": {
+      "Tank": {
+        "Essence": 6,
+        "Fur": 6,
+        "LargeBarrel": 4,
+        "Gunpowder": 4,
+        "IronOre": 4,
+        "DevilsBlight": 2
+      },
+      "Sticky Bomb": {
+        "LargeBarrel": 4,
+        "Gunpowder": 4,
+        "IronOre": 4,
+        "SinisterCloth": 1,
+        "DevilsBlight": 1
+      },
+      "Sign": {
+        "Essence": 3,
+        "Fur": 5,
+        "LargeBarrel": 3,
+        "IronOre": 4,
+        "SinisterCloth": 1
+      },
+      "Spoon": {
+        "Fur": 5,
+        "LargeBarrel": 4,
+        "Gunpowder": 3,
+        "SinisterCloth": 1
+      },
+      "Splee": {
+        "Essence": 5,
+        "Gunpowder": 3,
+        "IronOre": 4,
+        "SinisterCloth": 1
+      },
+      "Squee": {
+        "Fur": 2,
+        "LargeBarrel": 4,
+        "DevilsBlight": 1
+      },
+      "Cannon": {
+        "Essence": 2
+      }
+    },
+    "Poison": {
+      "Tank": {
+        "Essence": 3,
+        "LargeBarrel": 3,
+        "Gunpowder": 3,
+        "IronOre": 3,
+        "SinisterCloth": 1,
+        "DevilsBlight": 1
+      },
+      "Spoon": {
+        "Essence": 3,
+        "Fur": 3,
+        "LargeBarrel": 3,
+        "IronOre": 3
+      },
+      "Spleen": {
+        "Fur": 3,
+        "Gunpowder": 3,
+        "SinisterCloth": 1
+      },
+      "Squee": {
+        "Fur": 3,
+        "IronOre": 3,
+        "DevilsBlight": 1
+      },
+      "Cannon": {
+        "Essence": 3,
+        "LargeBarrel": 3,
+        "Gunpowder": 3
+      }
+    },
+    "Dire": {
+      "Tank": {
+        "Essence": 4,
+        "KirHide": 2,
+        "LargeBarrel": 3,
+        "Gunpowder": 3,
+        "IronOre": 3,
+        "SinisterCloth": 2,
+        "DevilsBlight": 2
+      },
+      "Spoon": {
+        "Essence": 4,
+        "Fur": 4,
+        "KirMane": 2,
+        "LargeBarrel": 3,
+        "IronOre": 3,
+        "SinisterCloth": 2
+      },
+      "Spleen": {
+        "Essence": 4,
+        "Fur": 4,
+        "KirThunderhorn": 2,
+        "KirMane": 2,
+        "Gunpowder": 3,
+        "DevilsBlight": 1
+      },
+      "Squee": {
+        "Fur": 4,
+        "KirHide": 2,
+        "IronOre": 3,
+        "DevilsBlight": 1
+      },
+      "Cannon": {
+        "KirMane": 2,
+        "LargeBarrel": 3,
+        "Gunpowder": 3
+      }
+    },
+    "Prismatic": {
+      "Tank": {
+        "Essence": 5,
+        "KirHide": 4,
+        "LargeBarrel": 5,
+        "Gunpowder": 5,
+        "IronOre": 5,
+        "SinisterCloth": 3,
+        "DevilsBlight": 2,
+        "PrismaticPigment": 1
+      },
+      "Spoon": {
+        "Essence": 5,
+        "Fur": 5,
+        "KirMane": 4,
+        "LargeBarrel": 5,
+        "IronOre": 5,
+        "SinisterCloth": 3,
+        "PrismaticPigment": 1
+      },
+      "Spleen": {
+        "Essence": 5,
+        "Fur": 5,
+        "KirThunderhorn": 4,
+        "KirMane": 4,
+        "Gunpowder": 5,
+        "ElderDragGem": 3,
+        "DevilsBlight": 2
+      },
+      "Squee": {
+        "Fur": 5,
+        "KirHide": 4,
+        "IronOre": 5,
+        "KirAzureHorn": 3,
+        "DevilsBlight": 2
+      },
+      "Cannon": {
+        "KirMane": 4,
+        "LargeBarrel": 5,
+        "Gunpowder": 5
+      }
+    }
+  },
+  "Anti Mage": {
+    "Base": {
+      "Jacket": {
+        "Fur": 6,
+        "Claw": 6,
+        "KirHide": 4,
+        "KirMane": 4,
+        "ElderDragGem": 2
+      },
+      "Blade": {
+        "Fur": 5,
+        "KirThunderhorn": 3,
+        "KirMane": 3,
+        "KirAzureHorn": 2
+      },
+      "Off-hand Blade": {
+        "Claw": 5,
+        "KirThunderhorn": 3,
+        "KirHide": 3,
+        "KirAzureHorn": 2
+      },
+      "Horn": {
+        "Fur": 5,
+        "Claw": 5,
+        "KirThunderhorn": 2,
+        "ElderDragGem": 2
+      },
+      "Persona": {
+        "KirThunderhorn": 2,
+        "KirHide": 2,
+        "KirMane": 2
+      }
+    },
+    "Icewrack": {
+      "Jacket": {
+        "Fur": 3,
+        "Claw": 3,
+        "KirHide": 3,
+        "KirMane": 3,
+        "ElderDragGem": 2
+      },
+      "Blade": {
+        "Fur": 3,
+        "KirThunderhorn": 3,
+        "KirMane": 3,
+        "KirAzureHorn": 1
+      },
+      "Off-hand Blade": {
+        "Claw": 3,
+        "KirThunderhorn": 3,
+        "KirHide": 3,
+        "KirAzureHorn": 1
+      },
+      "Horn": {
+        "KirThunderhorn": 3
+      }
+    },
+    "Golden": {
+      "Jacket": {
+        "Fur": 4,
+        "Claw": 4,
+        "RathCarapache": 4,
+        "KirHide": 3,
+        "KirMane": 3,
+        "ElderDragGem": 2
+      },
+      "Blade": {
+        "Fur": 4,
+        "RathTail": 4,
+        "KirThunderhorn": 3,
+        "KirMane": 3,
+        "KirAzureHorn": 1
+      },
+      "Off-hand Blade": {
+        "Claw": 4,
+        "RathWing": 4,
+        "KirThunderhorn": 3,
+        "KirHide": 3,
+        "KirAzureHorn": 1
+      },
+      "Horn": {
+        "KirThunderhorn": 3,
+        "KirAzureHorn": 1,
+        "ElderDragGem": 1
+      }
+    },
+    "Prismatic": {
+      "Jacket": {
+        "Fur": 10,
+        "Claw": 5,
+        "RathCarapache": 6,
+        "KirHide": 4,
+        "KirMane": 4,
+        "RathRuby": 2,
+        "ElderDragGem": 4
+      },
+      "Blade": {
+        "Fur": 5,
+        "RathTail": 6,
+        "KirThunderhorn": 4,
+        "KirMane": 4,
+        "KirAzureHorn": 2,
+        "PrismaticPigment": 1
+      },
+      "Off-hand Blade": {
+        "Claw": 5,
+        "RathWing": 6,
+        "KirThunderhorn": 4,
+        "KirHide": 4,
+        "KirAzureHorn": 2,
+        "PrismaticPigment": 1
+      },
+      "Horn": {
+        "Claw": 5,
+        "KirThunderhorn": 4,
+        "RathPlate": 2,
+        "KirAzureHorn": 2,
+        "ElderDragGem": 2
+      }
+    }
+  },
+  "Dragon Knight": {
+    "Base": {
+      "Sword": {
+        "Essence": 6,
+        "Claw": 6,
+        "RathWing": 4,
+        "RathTail": 4,
+        "RathRuby": 2,
+        "RathPlate": 2
+      },
+      "Shield": {
+        "Essence": 6,
+        "Claw": 6,
+        "RathCarapache": 4,
+        "RathWing": 4,
+        "RathTail": 4
+      },
+      "Mail": {
+        "Essence": 5,
+        "Claw": 5,
+        "RathCarapache": 3,
+        "RathPlate": 2
+      },
+      "Helm": {
+        "RathWing": 3,
+        "RathTail": 3,
+        "RathRuby": 2
+      },
+      "Coil": {
+        "Essence": 5,
+        "RathCarapache": 4
+      },
+      "Braces": {
+        "Claw": 2
+      }
+    },
+    "Imperium": {
+      "Sword": {
+        "Essence": 4,
+        "Claw": 4,
+        "RathWing": 3,
+        "RathTail": 3,
+        "RathPlate": 1
+      },
+      "Shield": {
+        "Essence": 4,
+        "Claw": 4,
+        "RathCarapache": 3,
+        "RathRuby": 1
+      },
+      "Mail": {
+        "Claw": 4,
+        "RathCarapache": 3,
+        "RathPlate": 1
+      },
+      "Helm": {
+        "RathWing": 3,
+        "RathTail": 3,
+        "RathRuby": 1
+      },
+      "Coil": {
+        "Essence": 4,
+        "RathWing": 3
+      },
+      "Braces": {
+        "RathCarapache": 3
+      }
+    },
+    "Deep Vault": {
+      "Sword": {
+        "Essence": 3,
+        "Claw": 3,
+        "RathWing": 3,
+        "RathTail": 3,
+        "BullHead": 2,
+        "RathRuby": 2,
+        "RathPlate": 2
+      },
+      "Shield": {
+        "Essence": 3,
+        "Claw": 3,
+        "RathCarapache": 3,
+        "RathWing": 3,
+        "RathTail": 3,
+        "KestShell": 2
+      },
+      "Mail": {
+        "Essence": 3,
+        "Claw": 3,
+        "RathCarapache": 3,
+        "KestShell": 2,
+        "RathPlate": 2
+      },
+      "Helm": {
+        "RathWing": 3,
+        "RathTail": 3,
+        "AncientBone": 2,
+        "RathRuby": 2
+      },
+      "Coil": {
+        "Essence": 3,
+        "RathWing": 3,
+        "BullHead": 2
+      },
+      "Braces": {
+        "RathCarapache": 5,
+        "AncientBone": 2
+      }
+    },
+    "Prismatic": {
+      "Sword": {
+        "Essence": 5,
+        "Claw": 5,
+        "RathWing": 4,
+        "RathTail": 4,
+        "BullHead": 4,
+        "RathRuby": 2,
+        "RathPlate": 4,
+        "PrismaticPigment": 1
+      },
+      "Shield": {
+        "Essence": 5,
+        "Claw": 5,
+        "RathCarapache": 4,
+        "RathWing": 4,
+        "RathTail": 4,
+        "KestShell": 4,
+        "PrismaticPigment": 1
+      },
+      "Mail": {
+        "Essence": 5,
+        "Claw": 5,
+        "RathCarapache": 4,
+        "KestShell": 4,
+        "RathPlate": 2
+      },
+      "Helm": {
+        "RathWing": 4,
+        "RathTail": 4,
+        "AncientBone": 4,
+        "RathRuby": 4
+      },
+      "Coil": {
+        "Essence": 5,
+        "RathWing": 4,
+        "BullHead": 4,
+        "WarpedBone": 2
+      },
+      "Braces": {
+        "RathCarapache": 6,
+        "AncientBone": 4,
+        "WyvernGem": 2
+      }
+    }
+  },
+  "Beastmaster": {
+    "Base": {
+      "Chainblade": {
+        "Claw": 5,
+        "OdoSinew": 3,
+        "OdoFang": 3,
+        "OdoScale": 3,
+        "WyvernGem": 2
+      },
+      "Helm": {
+        "Essence": 6,
+        "AncientBone": 4,
+        "KestShell": 4,
+        "BullHead": 5,
+        "WyvernGem": 2
+      },
+      "Mail": {
+        "Claw": 5,
+        "AncientBone": 3,
+        "KestShell": 5,
+        "BullHead": 3,
+        "WarpedBone": 2
+      },
+      "Coil": {
+        "Essence": 5,
+        "AncientBone": 5,
+        "KestShell": 3,
+        "BullHead": 3
+      },
+      "Vambrace": {
+        "Essence": 5,
+        "Claw": 5,
+        "WarpedBone": 2
+      }
+    },
+    "White Stag": {
+      "Chainblade": {
+        "Claw": 3,
+        "OdoSinew": 3,
+        "OdoFang": 3,
+        "OdoScale": 3,
+        "WyvernGem": 1,
+        "WarpedBone": 1
+      },
+      "Helm": {
+        "Essence": 3,
+        "Claw": 3,
+        "KestShell": 3,
+        "BullHead": 3
+      },
+      "Mail": {
+        "Essence": 3,
+        "Claw": 3,
+        "AncientBone": 3,
+        "KestShell": 3
+      },
+      "Coil": {
+        "Essence": 3,
+        "AncientBone": 3,
+        "BullHead": 3
+      },
+      "Vambrace": {
+        "WyvernGem": 1,
+        "WarpedBone": 1
+      }
+    },
+    "Golden": {
+      "Chainblade": {
+        "Claw": 4,
+        "OdoSinew": 3,
+        "OdoFang": 3,
+        "OdoScale": 3,
+        "WyvernGem": 2,
+        "WarpedBone": 2
+      },
+      "Helm": {
+        "Essence": 4,
+        "OdoScale": 2,
+        "AncientBone": 3,
+        "KestShell": 3,
+        "BullHead": 5
+      },
+      "Mail": {
+        "Claw": 4,
+        "OdoSinew": 2,
+        "AncientBone": 3,
+        "KestShell": 5,
+        "BullHead": 3
+      },
+      "Coil": {
+        "Essence": 4,
+        "OdoFang": 2,
+        "AncientBone": 5,
+        "KestShell": 3,
+        "BullHead": 3
+      },
+      "Vambrace": {
+        "Essence": 4,
+        "Claw": 4,
+        "WyvernGem": 1,
+        "WarpedBone": 1
+      }
+    },
+    "Prismatic": {
+      "Chainblade": {
+        "Claw": 5,
+        "OdoSinew": 4,
+        "OdoFang": 4,
+        "OdoScale": 4,
+        "WyvernGem": 3,
+        "WarpedBone": 3,
+        "PrismaticPigment": 1
+      },
+      "Helm": {
+        "Essence": 5,
+        "OdoScale": 4,
+        "AncientBone": 4,
+        "KestShell": 4,
+        "BullHead": 6,
+        "PrismaticPigment": 1
+      },
+      "Mail": {
+        "Claw": 5,
+        "OdoSinew": 4,
+        "AncientBone": 4,
+        "KestShell": 6,
+        "BullHead": 4,
+        "OdoShard": 2
+      },
+      "Coil": {
+        "Essence": 5,
+        "OdoFang": 4,
+        "AncientBone": 6,
+        "KestShell": 4,
+        "BullHead": 4,
+        "WarpedBone": 1
+      },
+      "Vambrace": {
+        "Essence": 5,
+        "Claw": 5,
+        "OdoMantle": 2,
+        "WyvernGem": 2,
+        "WarpedBone": 1
+      }
+    }
+  },
+  "Windranger": {
+    "Base": {
+      "Helm": {
+        "Claw": 6,
+        "ZinShocker": 4,
+        "ZinCortex": 4,
+        "ZinHorn": 2,
+        "ZinSky": 2
+      },
+      "Mail": {
+        "Fur": 6,
+        "Claw": 6,
+        "ZinFur": 4,
+        "ZinShocker": 4,
+        "ZinHorn": 2
+      },
+      "Bow": {
+        "Fur": 5,
+        "ZinFur": 3,
+        "ZinCortex": 3,
+        "ZinSky": 2
+      },
+      "Cape": {
+        "Fur": 5,
+        "ZinFur": 3,
+        "ZinShocker": 3
+      },
+      "Quiver": {
+        "Claw": 5,
+        "ZinCortex": 3
+      }
+    },
+    "Autumnal": {
+      "Helm": {
+        "Claw": 3,
+        "ZinShocker": 3,
+        "ZinCortex": 3,
+        "ZinHorn": 2,
+        "ZinSky": 1
+      },
+      "Mail": {
+        "Fur": 3,
+        "Claw": 3,
+        "ZinFur": 3,
+        "ZinShocker": 3
+      },
+      "Bow": {
+        "Fur": 3,
+        "ZinFur": 3,
+        "ZinCortex": 3,
+        "ZinSky": 1
+      },
+      "Cape": {
+        "Fur": 3,
+        "ZinFur": 3
+      },
+      "Quiver": {
+        "Claw": 3,
+        "ZinCortex": 3
+      }
+    },
+    "Sylvan": {
+      "Helm": {
+        "Claw": 4,
+        "ZinShocker": 3,
+        "ZinCortex": 4,
+        "IronOre": 2,
+        "ZinHorn": 2,
+        "ZinSky": 2
+      },
+      "Mail": {
+        "Fur": 4,
+        "Claw": 4,
+        "ZinFur": 4,
+        "ZinShocker": 3,
+        "LargeBarrel": 2,
+        "ZinHorn": 2
+      },
+      "Bow": {
+        "Fur": 4,
+        "ZinFur": 3,
+        "ZinCortex": 3,
+        "Gunpowder": 2,
+        "IronOre": 2,
+        "ZinSky": 2
+      },
+      "Cape": {
+        "Fur": 4,
+        "ZinFur": 3,
+        "ZinShocker": 4,
+        "Gunpowder": 2
+      },
+      "Quiver": {
+        "Claw": 4,
+        "ZinCortex": 3,
+        "LargeBarrel": 2
+      }
+    },
+    "Prismatic": {
+      "Helm": {
+        "Fur": 5,
+        "Claw": 5,
+        "ZinShocker": 3,
+        "ZinCortex": 3,
+        "IronOre": 3,
+        "ZinHorn": 3,
+        "ZinSky": 3,
+        "PrismaticPigment": 1
+      },
+      "Mail": {
+        "Fur": 5,
+        "Claw": 5,
+        "ZinFur": 5,
+        "ZinShocker": 3,
+        "LargeBarrel": 3,
+        "ZinHorn": 3,
+        "PrismaticPigment": 1
+      },
+      "Bow": {
+        "ZinFur": 3,
+        "ZinCortex": 3,
+        "Gunpowder": 3,
+        "IronOre": 3,
+        "ZinSky": 3
+      },
+      "Cape": {
+        "Fur": 5,
+        "ZinFur": 3,
+        "ZinShocker": 4,
+        "Gunpowder": 3,
+        "DevilsBlight": 2
+      },
+      "Quiver": {
+        "Claw": 5,
+        "ZinCortex": 4,
+        "LargeBarrel": 3,
+        "SinisterCloth": 2
+      }
+    }
+  }
+}

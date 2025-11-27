@@ -1,0 +1,1607 @@
+======================================================================================================================================================
+REPORTE COMPLETO - EXTRACCIÓN DE DATOS DOTA x MONSTER HUNTER
+======================================================================================================================================================
+
+
+======================================================================================================================================================
+HÉROE: SNIPER
+======================================================================================================================================================
+
+  SET 1: Base
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Rifle
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   6
+      • Monster Fur                              → Fur                       | Cantidad:   6
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   4
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   4
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   2
+      • Odogaron Mantle                          → OdoMantle                 | Cantidad:   2
+    Total por pieza (Rifle): 24
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   4
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   4
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   2
+      • Odogaron Mantle                          → OdoMantle                 | Cantidad:   2
+    Total por pieza (Helm): 12
+
+    PIEZA: Cape
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   3
+    Total por pieza (Cape): 16
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+    Total por pieza (Mail): 11
+
+    PIEZA: Vambrace
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+    Total por pieza (Vambrace): 8
+
+  TOTALES POR MATERIAL - SET Base:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  16
+    Monster Fur                              → Fur                       | Total:  16
+    Odogaron Sinew                           → OdoSinew                  | Total:  10
+    Odogaron Hardfang                        → OdoFang                   | Total:  11
+    Odogaron Scale                           → OdoScale                  | Total:  10
+    Odogaron Shard                           → OdoShard                  | Total:   4
+    Odogaron Mantle                          → OdoMantle                 | Total:   4
+
+  TOTAL SUMATORIA DE MATERIALES - SET Base: 71
+
+  SET 2: Dreadwood
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Rifle
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   3
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   2
+    Total por pieza (Rifle): 11
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+      • Odogaron Mantle                          → OdoMantle                 | Cantidad:   2
+    Total por pieza (Helm): 8
+
+    PIEZA: Cape
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   3
+    Total por pieza (Cape): 6
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+    Total por pieza (Mail): 6
+
+    PIEZA: Vambrace
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+    Total por pieza (Vambrace): 3
+
+  TOTALES POR MATERIAL - SET Dreadwood:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:   6
+    Monster Fur                              → Fur                       | Total:   6
+    Odogaron Sinew                           → OdoSinew                  | Total:   6
+    Odogaron Hardfang                        → OdoFang                   | Total:   6
+    Odogaron Scale                           → OdoScale                  | Total:   6
+    Odogaron Shard                           → OdoShard                  | Total:   2
+    Odogaron Mantle                          → OdoMantle                 | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Dreadwood: 34
+
+  SET 3: Foxfire
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Rifle
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   3
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   2
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   1
+      • Odogaron Mantle                          → OdoMantle                 | Cantidad:   2
+    Total por pieza (Rifle): 19
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   3
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   2
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   1
+      • Odogaron Mantle                          → OdoMantle                 | Cantidad:   1
+    Total por pieza (Helm): 10
+
+    PIEZA: Cape
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   4
+    Total por pieza (Cape): 18
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   2
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   1
+    Total por pieza (Mail): 10
+
+    PIEZA: Vambrace
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   3
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   2
+    Total por pieza (Vambrace): 12
+
+  TOTALES POR MATERIAL - SET Foxfire:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  12
+    Monster Fur                              → Fur                       | Total:  12
+    Odogaron Sinew                           → OdoSinew                  | Total:   9
+    Odogaron Hardfang                        → OdoFang                   | Total:   9
+    Odogaron Scale                           → OdoScale                  | Total:   9
+    Zinogre Electrofur                       → ZinFur                    | Total:   4
+    Zinogre Deathly Shocker                  → ZinShocker                | Total:   4
+    Zinogre Cortex                           → ZinCortex                 | Total:   4
+    Odogaron Shard                           → OdoShard                  | Total:   3
+    Odogaron Mantle                          → OdoMantle                 | Total:   3
+
+  TOTAL SUMATORIA DE MATERIALES - SET Foxfire: 69
+
+  SET 4: Prismatic
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Rifle
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   7
+      • Monster Fur                              → Fur                       | Cantidad:   7
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   4
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   4
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   2
+      • Odogaron Mantle                          → OdoMantle                 | Cantidad:   4
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Rifle): 32
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   4
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   4
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   3
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   2
+      • Odogaron Mantle                          → OdoMantle                 | Cantidad:   2
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Helm): 16
+
+    PIEZA: Cape
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   4
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   4
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   6
+      • Zinogre Hardhorn                         → ZinHorn                   | Cantidad:   3
+    Total por pieza (Cape): 27
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   4
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   3
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   2
+      • Zinogre Skymerald                        → ZinSky                    | Cantidad:   3
+    Total por pieza (Mail): 17
+
+    PIEZA: Vambrace
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   4
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   4
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+    Total por pieza (Vambrace): 16
+
+  TOTALES POR MATERIAL - SET Prismatic:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  17
+    Monster Fur                              → Fur                       | Total:  17
+    Odogaron Sinew                           → OdoSinew                  | Total:  12
+    Odogaron Hardfang                        → OdoFang                   | Total:  12
+    Odogaron Scale                           → OdoScale                  | Total:  12
+    Zinogre Electrofur                       → ZinFur                    | Total:   6
+    Zinogre Deathly Shocker                  → ZinShocker                | Total:   6
+    Zinogre Cortex                           → ZinCortex                 | Total:   6
+    Odogaron Shard                           → OdoShard                  | Total:   6
+    Odogaron Mantle                          → OdoMantle                 | Total:   6
+    Zinogre Hardhorn                         → ZinHorn                   | Total:   3
+    Zinogre Skymerald                        → ZinSky                    | Total:   3
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Prismatic: 108
+
+
+  TOTALES POR MATERIAL - HÉROE Sniper:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  51
+    Monster Fur                              → Fur                       | Total:  51
+    Odogaron Sinew                           → OdoSinew                  | Total:  37
+    Odogaron Hardfang                        → OdoFang                   | Total:  38
+    Odogaron Scale                           → OdoScale                  | Total:  37
+    Zinogre Electrofur                       → ZinFur                    | Total:  10
+    Zinogre Deathly Shocker                  → ZinShocker                | Total:  10
+    Zinogre Cortex                           → ZinCortex                 | Total:  10
+    Odogaron Shard                           → OdoShard                  | Total:  15
+    Odogaron Mantle                          → OdoMantle                 | Total:  15
+    Zinogre Hardhorn                         → ZinHorn                   | Total:   3
+    Zinogre Skymerald                        → ZinSky                    | Total:   3
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - HÉROE Sniper: 282
+
+======================================================================================================================================================
+HÉROE: TECHIES
+======================================================================================================================================================
+
+  SET 1: Base
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Tank
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   6
+      • Monster Fur                              → Fur                       | Cantidad:   6
+      • Large Barrel                             → LargeBarrel               | Cantidad:   4
+      • Gunpowder                                → Gunpowder                 | Cantidad:   4
+      • Iron Ore                                 → IronOre                   | Cantidad:   4
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   2
+    Total por pieza (Tank): 26
+
+    PIEZA: Sticky Bomb
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Large Barrel                             → LargeBarrel               | Cantidad:   4
+      • Gunpowder                                → Gunpowder                 | Cantidad:   4
+      • Iron Ore                                 → IronOre                   | Cantidad:   4
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   1
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   1
+    Total por pieza (Sticky Bomb): 14
+
+    PIEZA: Sign
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Large Barrel                             → LargeBarrel               | Cantidad:   3
+      • Iron Ore                                 → IronOre                   | Cantidad:   4
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   1
+    Total por pieza (Sign): 16
+
+    PIEZA: Spoon
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Large Barrel                             → LargeBarrel               | Cantidad:   4
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   1
+    Total por pieza (Spoon): 13
+
+    PIEZA: Splee
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+      • Iron Ore                                 → IronOre                   | Cantidad:   4
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   1
+    Total por pieza (Splee): 13
+
+    PIEZA: Squee
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   2
+      • Large Barrel                             → LargeBarrel               | Cantidad:   4
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   1
+    Total por pieza (Squee): 7
+
+    PIEZA: Cannon
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   2
+    Total por pieza (Cannon): 2
+
+  TOTALES POR MATERIAL - SET Base:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  16
+    Monster Fur                              → Fur                       | Total:  18
+    Large Barrel                             → LargeBarrel               | Total:  19
+    Gunpowder                                → Gunpowder                 | Total:  14
+    Iron Ore                                 → IronOre                   | Total:  16
+    Sinister Cloth                           → SinisterCloth             | Total:   4
+    Devil's Blight                           → DevilsBlight              | Total:   4
+
+  TOTAL SUMATORIA DE MATERIALES - SET Base: 91
+
+  SET 2: Poison
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Tank
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Large Barrel                             → LargeBarrel               | Cantidad:   3
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+      • Iron Ore                                 → IronOre                   | Cantidad:   3
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   1
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   1
+    Total por pieza (Tank): 14
+
+    PIEZA: Spoon
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Large Barrel                             → LargeBarrel               | Cantidad:   3
+      • Iron Ore                                 → IronOre                   | Cantidad:   3
+    Total por pieza (Spoon): 12
+
+    PIEZA: Spleen
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   1
+    Total por pieza (Spleen): 7
+
+    PIEZA: Squee
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Iron Ore                                 → IronOre                   | Cantidad:   3
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   1
+    Total por pieza (Squee): 7
+
+    PIEZA: Cannon
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Large Barrel                             → LargeBarrel               | Cantidad:   3
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+    Total por pieza (Cannon): 9
+
+  TOTALES POR MATERIAL - SET Poison:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:   9
+    Monster Fur                              → Fur                       | Total:   9
+    Large Barrel                             → LargeBarrel               | Total:   9
+    Gunpowder                                → Gunpowder                 | Total:   9
+    Iron Ore                                 → IronOre                   | Total:   9
+    Sinister Cloth                           → SinisterCloth             | Total:   2
+    Devil's Blight                           → DevilsBlight              | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Poison: 49
+
+  SET 3: Dire
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Tank
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Kirin Hide                               → KirHide                   | Cantidad:   2
+      • Large Barrel                             → LargeBarrel               | Cantidad:   3
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+      • Iron Ore                                 → IronOre                   | Cantidad:   3
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   2
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   2
+    Total por pieza (Tank): 19
+
+    PIEZA: Spoon
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Kirin Mane                               → KirMane                   | Cantidad:   2
+      • Large Barrel                             → LargeBarrel               | Cantidad:   3
+      • Iron Ore                                 → IronOre                   | Cantidad:   3
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   2
+    Total por pieza (Spoon): 18
+
+    PIEZA: Spleen
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   2
+      • Kirin Mane                               → KirMane                   | Cantidad:   2
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   1
+    Total por pieza (Spleen): 16
+
+    PIEZA: Squee
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Kirin Hide                               → KirHide                   | Cantidad:   2
+      • Iron Ore                                 → IronOre                   | Cantidad:   3
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   1
+    Total por pieza (Squee): 10
+
+    PIEZA: Cannon
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Kirin Mane                               → KirMane                   | Cantidad:   2
+      • Large Barrel                             → LargeBarrel               | Cantidad:   3
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+    Total por pieza (Cannon): 8
+
+  TOTALES POR MATERIAL - SET Dire:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  12
+    Monster Fur                              → Fur                       | Total:  12
+    Kirin Thunderhorn                        → KirThunderhorn            | Total:   2
+    Kirin Hide                               → KirHide                   | Total:   4
+    Kirin Mane                               → KirMane                   | Total:   6
+    Large Barrel                             → LargeBarrel               | Total:   9
+    Gunpowder                                → Gunpowder                 | Total:   9
+    Iron Ore                                 → IronOre                   | Total:   9
+    Sinister Cloth                           → SinisterCloth             | Total:   4
+    Devil's Blight                           → DevilsBlight              | Total:   4
+
+  TOTAL SUMATORIA DE MATERIALES - SET Dire: 71
+
+  SET 4: Prismatic
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Tank
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Kirin Hide                               → KirHide                   | Cantidad:   4
+      • Large Barrel                             → LargeBarrel               | Cantidad:   5
+      • Gunpowder                                → Gunpowder                 | Cantidad:   5
+      • Iron Ore                                 → IronOre                   | Cantidad:   5
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   3
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   2
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Tank): 30
+
+    PIEZA: Spoon
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Kirin Mane                               → KirMane                   | Cantidad:   4
+      • Large Barrel                             → LargeBarrel               | Cantidad:   5
+      • Iron Ore                                 → IronOre                   | Cantidad:   5
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   3
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Spoon): 28
+
+    PIEZA: Spleen
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   4
+      • Kirin Mane                               → KirMane                   | Cantidad:   4
+      • Gunpowder                                → Gunpowder                 | Cantidad:   5
+      • Large Elder Dragon Gem                   → ElderDragGem              | Cantidad:   3
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   2
+    Total por pieza (Spleen): 28
+
+    PIEZA: Squee
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Kirin Hide                               → KirHide                   | Cantidad:   4
+      • Iron Ore                                 → IronOre                   | Cantidad:   5
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   3
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   2
+    Total por pieza (Squee): 19
+
+    PIEZA: Cannon
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Kirin Mane                               → KirMane                   | Cantidad:   4
+      • Large Barrel                             → LargeBarrel               | Cantidad:   5
+      • Gunpowder                                → Gunpowder                 | Cantidad:   5
+    Total por pieza (Cannon): 14
+
+  TOTALES POR MATERIAL - SET Prismatic:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  15
+    Monster Fur                              → Fur                       | Total:  15
+    Kirin Thunderhorn                        → KirThunderhorn            | Total:   4
+    Kirin Hide                               → KirHide                   | Total:   8
+    Kirin Mane                               → KirMane                   | Total:  12
+    Large Barrel                             → LargeBarrel               | Total:  15
+    Gunpowder                                → Gunpowder                 | Total:  15
+    Iron Ore                                 → IronOre                   | Total:  15
+    Kirin Azure Horn                         → KirAzureHorn              | Total:   3
+    Large Elder Dragon Gem                   → ElderDragGem              | Total:   3
+    Sinister Cloth                           → SinisterCloth             | Total:   6
+    Devil's Blight                           → DevilsBlight              | Total:   6
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Prismatic: 119
+
+
+  TOTALES POR MATERIAL - HÉROE Techies:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  52
+    Monster Fur                              → Fur                       | Total:  54
+    Kirin Thunderhorn                        → KirThunderhorn            | Total:   6
+    Kirin Hide                               → KirHide                   | Total:  12
+    Kirin Mane                               → KirMane                   | Total:  18
+    Large Barrel                             → LargeBarrel               | Total:  52
+    Gunpowder                                → Gunpowder                 | Total:  47
+    Iron Ore                                 → IronOre                   | Total:  49
+    Kirin Azure Horn                         → KirAzureHorn              | Total:   3
+    Large Elder Dragon Gem                   → ElderDragGem              | Total:   3
+    Sinister Cloth                           → SinisterCloth             | Total:  16
+    Devil's Blight                           → DevilsBlight              | Total:  16
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - HÉROE Techies: 330
+
+======================================================================================================================================================
+HÉROE: ANTI MAGE
+======================================================================================================================================================
+
+  SET 1: Base
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Jacket
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   6
+      • Monster Claw                             → Claw                      | Cantidad:   6
+      • Kirin Hide                               → KirHide                   | Cantidad:   4
+      • Kirin Mane                               → KirMane                   | Cantidad:   4
+      • Large Elder Dragon Gem                   → ElderDragGem              | Cantidad:   2
+    Total por pieza (Jacket): 22
+
+    PIEZA: Blade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   3
+      • Kirin Mane                               → KirMane                   | Cantidad:   3
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   2
+    Total por pieza (Blade): 13
+
+    PIEZA: Off-hand Blade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   3
+      • Kirin Hide                               → KirHide                   | Cantidad:   3
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   2
+    Total por pieza (Off-hand Blade): 13
+
+    PIEZA: Horn
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   2
+      • Large Elder Dragon Gem                   → ElderDragGem              | Cantidad:   2
+    Total por pieza (Horn): 14
+
+    PIEZA: Persona
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   2
+      • Kirin Hide                               → KirHide                   | Cantidad:   2
+      • Kirin Mane                               → KirMane                   | Cantidad:   2
+    Total por pieza (Persona): 6
+
+  TOTALES POR MATERIAL - SET Base:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:  16
+    Monster Claw                             → Claw                      | Total:  16
+    Kirin Thunderhorn                        → KirThunderhorn            | Total:  10
+    Kirin Hide                               → KirHide                   | Total:   9
+    Kirin Mane                               → KirMane                   | Total:   9
+    Kirin Azure Horn                         → KirAzureHorn              | Total:   4
+    Large Elder Dragon Gem                   → ElderDragGem              | Total:   4
+
+  TOTAL SUMATORIA DE MATERIALES - SET Base: 68
+
+  SET 2: Icewrack
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Jacket
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Kirin Hide                               → KirHide                   | Cantidad:   3
+      • Kirin Mane                               → KirMane                   | Cantidad:   3
+      • Large Elder Dragon Gem                   → ElderDragGem              | Cantidad:   2
+    Total por pieza (Jacket): 14
+
+    PIEZA: Blade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   3
+      • Kirin Mane                               → KirMane                   | Cantidad:   3
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   1
+    Total por pieza (Blade): 10
+
+    PIEZA: Off-hand Blade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   3
+      • Kirin Hide                               → KirHide                   | Cantidad:   3
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   1
+    Total por pieza (Off-hand Blade): 10
+
+    PIEZA: Horn
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   3
+    Total por pieza (Horn): 3
+
+  TOTALES POR MATERIAL - SET Icewrack:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:   6
+    Monster Claw                             → Claw                      | Total:   6
+    Kirin Thunderhorn                        → KirThunderhorn            | Total:   9
+    Kirin Hide                               → KirHide                   | Total:   6
+    Kirin Mane                               → KirMane                   | Total:   6
+    Kirin Azure Horn                         → KirAzureHorn              | Total:   2
+    Large Elder Dragon Gem                   → ElderDragGem              | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Icewrack: 37
+
+  SET 3: Golden
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Jacket
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   4
+      • Kirin Hide                               → KirHide                   | Cantidad:   3
+      • Kirin Mane                               → KirMane                   | Cantidad:   3
+      • Large Elder Dragon Gem                   → ElderDragGem              | Cantidad:   2
+    Total por pieza (Jacket): 20
+
+    PIEZA: Blade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Rathalos Tail                            → RathTail                  | Cantidad:   4
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   3
+      • Kirin Mane                               → KirMane                   | Cantidad:   3
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   1
+    Total por pieza (Blade): 15
+
+    PIEZA: Off-hand Blade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Rathalos Wing                            → RathWing                  | Cantidad:   4
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   3
+      • Kirin Hide                               → KirHide                   | Cantidad:   3
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   1
+    Total por pieza (Off-hand Blade): 15
+
+    PIEZA: Horn
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   3
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   1
+      • Large Elder Dragon Gem                   → ElderDragGem              | Cantidad:   1
+    Total por pieza (Horn): 5
+
+  TOTALES POR MATERIAL - SET Golden:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:   8
+    Monster Claw                             → Claw                      | Total:   8
+    Rathalos Carapache                       → RathCarapache             | Total:   4
+    Rathalos Wing                            → RathWing                  | Total:   4
+    Rathalos Tail                            → RathTail                  | Total:   4
+    Kirin Thunderhorn                        → KirThunderhorn            | Total:   9
+    Kirin Hide                               → KirHide                   | Total:   6
+    Kirin Mane                               → KirMane                   | Total:   6
+    Kirin Azure Horn                         → KirAzureHorn              | Total:   3
+    Large Elder Dragon Gem                   → ElderDragGem              | Total:   3
+
+  TOTAL SUMATORIA DE MATERIALES - SET Golden: 55
+
+  SET 4: Prismatic
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Jacket
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:  10
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   6
+      • Kirin Hide                               → KirHide                   | Cantidad:   4
+      • Kirin Mane                               → KirMane                   | Cantidad:   4
+      • Rathalos Ruby                            → RathRuby                  | Cantidad:   2
+      • Large Elder Dragon Gem                   → ElderDragGem              | Cantidad:   4
+    Total por pieza (Jacket): 35
+
+    PIEZA: Blade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Rathalos Tail                            → RathTail                  | Cantidad:   6
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   4
+      • Kirin Mane                               → KirMane                   | Cantidad:   4
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   2
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Blade): 22
+
+    PIEZA: Off-hand Blade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Rathalos Wing                            → RathWing                  | Cantidad:   6
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   4
+      • Kirin Hide                               → KirHide                   | Cantidad:   4
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   2
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Off-hand Blade): 22
+
+    PIEZA: Horn
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Kirin Thunderhorn                        → KirThunderhorn            | Cantidad:   4
+      • Rathalos Plate                           → RathPlate                 | Cantidad:   2
+      • Kirin Azure Horn                         → KirAzureHorn              | Cantidad:   2
+      • Large Elder Dragon Gem                   → ElderDragGem              | Cantidad:   2
+    Total por pieza (Horn): 15
+
+  TOTALES POR MATERIAL - SET Prismatic:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:  15
+    Monster Claw                             → Claw                      | Total:  15
+    Rathalos Carapache                       → RathCarapache             | Total:   6
+    Rathalos Wing                            → RathWing                  | Total:   6
+    Rathalos Tail                            → RathTail                  | Total:   6
+    Kirin Thunderhorn                        → KirThunderhorn            | Total:  12
+    Kirin Hide                               → KirHide                   | Total:   8
+    Kirin Mane                               → KirMane                   | Total:   8
+    Rathalos Ruby                            → RathRuby                  | Total:   2
+    Rathalos Plate                           → RathPlate                 | Total:   2
+    Kirin Azure Horn                         → KirAzureHorn              | Total:   6
+    Large Elder Dragon Gem                   → ElderDragGem              | Total:   6
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Prismatic: 94
+
+
+  TOTALES POR MATERIAL - HÉROE Anti Mage:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:  45
+    Monster Claw                             → Claw                      | Total:  45
+    Rathalos Carapache                       → RathCarapache             | Total:  10
+    Rathalos Wing                            → RathWing                  | Total:  10
+    Rathalos Tail                            → RathTail                  | Total:  10
+    Kirin Thunderhorn                        → KirThunderhorn            | Total:  40
+    Kirin Hide                               → KirHide                   | Total:  29
+    Kirin Mane                               → KirMane                   | Total:  29
+    Rathalos Ruby                            → RathRuby                  | Total:   2
+    Rathalos Plate                           → RathPlate                 | Total:   2
+    Kirin Azure Horn                         → KirAzureHorn              | Total:  15
+    Large Elder Dragon Gem                   → ElderDragGem              | Total:  15
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - HÉROE Anti Mage: 254
+
+======================================================================================================================================================
+HÉROE: DRAGON KNIGHT
+======================================================================================================================================================
+
+  SET 1: Base
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Sword
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   6
+      • Monster Claw                             → Claw                      | Cantidad:   6
+      • Rathalos Wing                            → RathWing                  | Cantidad:   4
+      • Rathalos Tail                            → RathTail                  | Cantidad:   4
+      • Rathalos Ruby                            → RathRuby                  | Cantidad:   2
+      • Rathalos Plate                           → RathPlate                 | Cantidad:   2
+    Total por pieza (Sword): 24
+
+    PIEZA: Shield
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   6
+      • Monster Claw                             → Claw                      | Cantidad:   6
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   4
+      • Rathalos Wing                            → RathWing                  | Cantidad:   4
+      • Rathalos Tail                            → RathTail                  | Cantidad:   4
+    Total por pieza (Shield): 24
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   3
+      • Rathalos Plate                           → RathPlate                 | Cantidad:   2
+    Total por pieza (Mail): 15
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Rathalos Wing                            → RathWing                  | Cantidad:   3
+      • Rathalos Tail                            → RathTail                  | Cantidad:   3
+      • Rathalos Ruby                            → RathRuby                  | Cantidad:   2
+    Total por pieza (Helm): 8
+
+    PIEZA: Coil
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   4
+    Total por pieza (Coil): 9
+
+    PIEZA: Braces
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   2
+    Total por pieza (Braces): 2
+
+  TOTALES POR MATERIAL - SET Base:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  22
+    Monster Claw                             → Claw                      | Total:  19
+    Rathalos Carapache                       → RathCarapache             | Total:  11
+    Rathalos Wing                            → RathWing                  | Total:  11
+    Rathalos Tail                            → RathTail                  | Total:  11
+    Rathalos Ruby                            → RathRuby                  | Total:   4
+    Rathalos Plate                           → RathPlate                 | Total:   4
+
+  TOTAL SUMATORIA DE MATERIALES - SET Base: 82
+
+  SET 2: Imperium
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Sword
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Rathalos Wing                            → RathWing                  | Cantidad:   3
+      • Rathalos Tail                            → RathTail                  | Cantidad:   3
+      • Rathalos Plate                           → RathPlate                 | Cantidad:   1
+    Total por pieza (Sword): 15
+
+    PIEZA: Shield
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   3
+      • Rathalos Ruby                            → RathRuby                  | Cantidad:   1
+    Total por pieza (Shield): 12
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   3
+      • Rathalos Plate                           → RathPlate                 | Cantidad:   1
+    Total por pieza (Mail): 8
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Rathalos Wing                            → RathWing                  | Cantidad:   3
+      • Rathalos Tail                            → RathTail                  | Cantidad:   3
+      • Rathalos Ruby                            → RathRuby                  | Cantidad:   1
+    Total por pieza (Helm): 7
+
+    PIEZA: Coil
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Rathalos Wing                            → RathWing                  | Cantidad:   3
+    Total por pieza (Coil): 7
+
+    PIEZA: Braces
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   3
+    Total por pieza (Braces): 3
+
+  TOTALES POR MATERIAL - SET Imperium:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  12
+    Monster Claw                             → Claw                      | Total:  12
+    Rathalos Carapache                       → RathCarapache             | Total:   9
+    Rathalos Wing                            → RathWing                  | Total:   9
+    Rathalos Tail                            → RathTail                  | Total:   6
+    Rathalos Ruby                            → RathRuby                  | Total:   2
+    Rathalos Plate                           → RathPlate                 | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Imperium: 52
+
+  SET 3: Deep Vault
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Sword
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Rathalos Wing                            → RathWing                  | Cantidad:   3
+      • Rathalos Tail                            → RathTail                  | Cantidad:   3
+      • Bullfango Head                           → BullHead                  | Cantidad:   2
+      • Rathalos Ruby                            → RathRuby                  | Cantidad:   2
+      • Rathalos Plate                           → RathPlate                 | Cantidad:   2
+    Total por pieza (Sword): 18
+
+    PIEZA: Shield
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   3
+      • Rathalos Wing                            → RathWing                  | Cantidad:   3
+      • Rathalos Tail                            → RathTail                  | Cantidad:   3
+      • Kestodon Shell                           → KestShell                 | Cantidad:   2
+    Total por pieza (Shield): 17
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   3
+      • Kestodon Shell                           → KestShell                 | Cantidad:   2
+      • Rathalos Plate                           → RathPlate                 | Cantidad:   2
+    Total por pieza (Mail): 13
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Rathalos Wing                            → RathWing                  | Cantidad:   3
+      • Rathalos Tail                            → RathTail                  | Cantidad:   3
+      • Ancient Bone                             → AncientBone               | Cantidad:   2
+      • Rathalos Ruby                            → RathRuby                  | Cantidad:   2
+    Total por pieza (Helm): 10
+
+    PIEZA: Coil
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Rathalos Wing                            → RathWing                  | Cantidad:   3
+      • Bullfango Head                           → BullHead                  | Cantidad:   2
+    Total por pieza (Coil): 8
+
+    PIEZA: Braces
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   5
+      • Ancient Bone                             → AncientBone               | Cantidad:   2
+    Total por pieza (Braces): 7
+
+  TOTALES POR MATERIAL - SET Deep Vault:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  12
+    Monster Claw                             → Claw                      | Total:   9
+    Rathalos Carapache                       → RathCarapache             | Total:  11
+    Rathalos Wing                            → RathWing                  | Total:  12
+    Rathalos Tail                            → RathTail                  | Total:   9
+    Ancient Bone                             → AncientBone               | Total:   4
+    Kestodon Shell                           → KestShell                 | Total:   4
+    Bullfango Head                           → BullHead                  | Total:   4
+    Rathalos Ruby                            → RathRuby                  | Total:   4
+    Rathalos Plate                           → RathPlate                 | Total:   4
+
+  TOTAL SUMATORIA DE MATERIALES - SET Deep Vault: 73
+
+  SET 4: Prismatic
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Sword
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Rathalos Wing                            → RathWing                  | Cantidad:   4
+      • Rathalos Tail                            → RathTail                  | Cantidad:   4
+      • Bullfango Head                           → BullHead                  | Cantidad:   4
+      • Rathalos Ruby                            → RathRuby                  | Cantidad:   2
+      • Rathalos Plate                           → RathPlate                 | Cantidad:   4
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Sword): 29
+
+    PIEZA: Shield
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   4
+      • Rathalos Wing                            → RathWing                  | Cantidad:   4
+      • Rathalos Tail                            → RathTail                  | Cantidad:   4
+      • Kestodon Shell                           → KestShell                 | Cantidad:   4
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Shield): 27
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   4
+      • Kestodon Shell                           → KestShell                 | Cantidad:   4
+      • Rathalos Plate                           → RathPlate                 | Cantidad:   2
+    Total por pieza (Mail): 20
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Rathalos Wing                            → RathWing                  | Cantidad:   4
+      • Rathalos Tail                            → RathTail                  | Cantidad:   4
+      • Ancient Bone                             → AncientBone               | Cantidad:   4
+      • Rathalos Ruby                            → RathRuby                  | Cantidad:   4
+    Total por pieza (Helm): 16
+
+    PIEZA: Coil
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Rathalos Wing                            → RathWing                  | Cantidad:   4
+      • Bullfango Head                           → BullHead                  | Cantidad:   4
+      • Warped Bone                              → WarpedBone                | Cantidad:   2
+    Total por pieza (Coil): 15
+
+    PIEZA: Braces
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Rathalos Carapache                       → RathCarapache             | Cantidad:   6
+      • Ancient Bone                             → AncientBone               | Cantidad:   4
+      • Wyvern Gem                               → WyvernGem                 | Cantidad:   2
+    Total por pieza (Braces): 12
+
+  TOTALES POR MATERIAL - SET Prismatic:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  20
+    Monster Claw                             → Claw                      | Total:  15
+    Rathalos Carapache                       → RathCarapache             | Total:  14
+    Rathalos Wing                            → RathWing                  | Total:  16
+    Rathalos Tail                            → RathTail                  | Total:  12
+    Ancient Bone                             → AncientBone               | Total:   8
+    Kestodon Shell                           → KestShell                 | Total:   8
+    Bullfango Head                           → BullHead                  | Total:   8
+    Rathalos Ruby                            → RathRuby                  | Total:   6
+    Rathalos Plate                           → RathPlate                 | Total:   6
+    Wyvern Gem                               → WyvernGem                 | Total:   2
+    Warped Bone                              → WarpedBone                | Total:   2
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Prismatic: 119
+
+
+  TOTALES POR MATERIAL - HÉROE Dragon Knight:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  66
+    Monster Claw                             → Claw                      | Total:  55
+    Rathalos Carapache                       → RathCarapache             | Total:  45
+    Rathalos Wing                            → RathWing                  | Total:  48
+    Rathalos Tail                            → RathTail                  | Total:  38
+    Ancient Bone                             → AncientBone               | Total:  12
+    Kestodon Shell                           → KestShell                 | Total:  12
+    Bullfango Head                           → BullHead                  | Total:  12
+    Rathalos Ruby                            → RathRuby                  | Total:  16
+    Rathalos Plate                           → RathPlate                 | Total:  16
+    Wyvern Gem                               → WyvernGem                 | Total:   2
+    Warped Bone                              → WarpedBone                | Total:   2
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - HÉROE Dragon Knight: 326
+
+======================================================================================================================================================
+HÉROE: BEASTMASTER
+======================================================================================================================================================
+
+  SET 1: Base
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Chainblade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   3
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+      • Wyvern Gem                               → WyvernGem                 | Cantidad:   2
+    Total por pieza (Chainblade): 16
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   6
+      • Ancient Bone                             → AncientBone               | Cantidad:   4
+      • Kestodon Shell                           → KestShell                 | Cantidad:   4
+      • Bullfango Head                           → BullHead                  | Cantidad:   5
+      • Wyvern Gem                               → WyvernGem                 | Cantidad:   2
+    Total por pieza (Helm): 21
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Ancient Bone                             → AncientBone               | Cantidad:   3
+      • Kestodon Shell                           → KestShell                 | Cantidad:   5
+      • Bullfango Head                           → BullHead                  | Cantidad:   3
+      • Warped Bone                              → WarpedBone                | Cantidad:   2
+    Total por pieza (Mail): 18
+
+    PIEZA: Coil
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Ancient Bone                             → AncientBone               | Cantidad:   5
+      • Kestodon Shell                           → KestShell                 | Cantidad:   3
+      • Bullfango Head                           → BullHead                  | Cantidad:   3
+    Total por pieza (Coil): 16
+
+    PIEZA: Vambrace
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Warped Bone                              → WarpedBone                | Cantidad:   2
+    Total por pieza (Vambrace): 12
+
+  TOTALES POR MATERIAL - SET Base:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  16
+    Monster Claw                             → Claw                      | Total:  15
+    Odogaron Sinew                           → OdoSinew                  | Total:   3
+    Odogaron Hardfang                        → OdoFang                   | Total:   3
+    Odogaron Scale                           → OdoScale                  | Total:   3
+    Ancient Bone                             → AncientBone               | Total:  12
+    Kestodon Shell                           → KestShell                 | Total:  12
+    Bullfango Head                           → BullHead                  | Total:  11
+    Wyvern Gem                               → WyvernGem                 | Total:   4
+    Warped Bone                              → WarpedBone                | Total:   4
+
+  TOTAL SUMATORIA DE MATERIALES - SET Base: 83
+
+  SET 2: White Stag
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Chainblade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   3
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+      • Wyvern Gem                               → WyvernGem                 | Cantidad:   1
+      • Warped Bone                              → WarpedBone                | Cantidad:   1
+    Total por pieza (Chainblade): 14
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Kestodon Shell                           → KestShell                 | Cantidad:   3
+      • Bullfango Head                           → BullHead                  | Cantidad:   3
+    Total por pieza (Helm): 12
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Ancient Bone                             → AncientBone               | Cantidad:   3
+      • Kestodon Shell                           → KestShell                 | Cantidad:   3
+    Total por pieza (Mail): 12
+
+    PIEZA: Coil
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   3
+      • Ancient Bone                             → AncientBone               | Cantidad:   3
+      • Bullfango Head                           → BullHead                  | Cantidad:   3
+    Total por pieza (Coil): 9
+
+    PIEZA: Vambrace
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Wyvern Gem                               → WyvernGem                 | Cantidad:   1
+      • Warped Bone                              → WarpedBone                | Cantidad:   1
+    Total por pieza (Vambrace): 2
+
+  TOTALES POR MATERIAL - SET White Stag:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:   9
+    Monster Claw                             → Claw                      | Total:   9
+    Odogaron Sinew                           → OdoSinew                  | Total:   3
+    Odogaron Hardfang                        → OdoFang                   | Total:   3
+    Odogaron Scale                           → OdoScale                  | Total:   3
+    Ancient Bone                             → AncientBone               | Total:   6
+    Kestodon Shell                           → KestShell                 | Total:   6
+    Bullfango Head                           → BullHead                  | Total:   6
+    Wyvern Gem                               → WyvernGem                 | Total:   2
+    Warped Bone                              → WarpedBone                | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET White Stag: 49
+
+  SET 3: Golden
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Chainblade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   3
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   3
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   3
+      • Wyvern Gem                               → WyvernGem                 | Cantidad:   2
+      • Warped Bone                              → WarpedBone                | Cantidad:   2
+    Total por pieza (Chainblade): 17
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   2
+      • Ancient Bone                             → AncientBone               | Cantidad:   3
+      • Kestodon Shell                           → KestShell                 | Cantidad:   3
+      • Bullfango Head                           → BullHead                  | Cantidad:   5
+    Total por pieza (Helm): 17
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   2
+      • Ancient Bone                             → AncientBone               | Cantidad:   3
+      • Kestodon Shell                           → KestShell                 | Cantidad:   5
+      • Bullfango Head                           → BullHead                  | Cantidad:   3
+    Total por pieza (Mail): 17
+
+    PIEZA: Coil
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   2
+      • Ancient Bone                             → AncientBone               | Cantidad:   5
+      • Kestodon Shell                           → KestShell                 | Cantidad:   3
+      • Bullfango Head                           → BullHead                  | Cantidad:   3
+    Total por pieza (Coil): 17
+
+    PIEZA: Vambrace
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   4
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Wyvern Gem                               → WyvernGem                 | Cantidad:   1
+      • Warped Bone                              → WarpedBone                | Cantidad:   1
+    Total por pieza (Vambrace): 10
+
+  TOTALES POR MATERIAL - SET Golden:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  12
+    Monster Claw                             → Claw                      | Total:  12
+    Odogaron Sinew                           → OdoSinew                  | Total:   5
+    Odogaron Hardfang                        → OdoFang                   | Total:   5
+    Odogaron Scale                           → OdoScale                  | Total:   5
+    Ancient Bone                             → AncientBone               | Total:  11
+    Kestodon Shell                           → KestShell                 | Total:  11
+    Bullfango Head                           → BullHead                  | Total:  11
+    Wyvern Gem                               → WyvernGem                 | Total:   3
+    Warped Bone                              → WarpedBone                | Total:   3
+
+  TOTAL SUMATORIA DE MATERIALES - SET Golden: 78
+
+  SET 4: Prismatic
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Chainblade
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   4
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   4
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   4
+      • Wyvern Gem                               → WyvernGem                 | Cantidad:   3
+      • Warped Bone                              → WarpedBone                | Cantidad:   3
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Chainblade): 24
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Odogaron Scale                           → OdoScale                  | Cantidad:   4
+      • Ancient Bone                             → AncientBone               | Cantidad:   4
+      • Kestodon Shell                           → KestShell                 | Cantidad:   4
+      • Bullfango Head                           → BullHead                  | Cantidad:   6
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Helm): 24
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Odogaron Sinew                           → OdoSinew                  | Cantidad:   4
+      • Ancient Bone                             → AncientBone               | Cantidad:   4
+      • Kestodon Shell                           → KestShell                 | Cantidad:   6
+      • Bullfango Head                           → BullHead                  | Cantidad:   4
+      • Odogaron Shard                           → OdoShard                  | Cantidad:   2
+    Total por pieza (Mail): 25
+
+    PIEZA: Coil
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Odogaron Hardfang                        → OdoFang                   | Cantidad:   4
+      • Ancient Bone                             → AncientBone               | Cantidad:   6
+      • Kestodon Shell                           → KestShell                 | Cantidad:   4
+      • Bullfango Head                           → BullHead                  | Cantidad:   4
+      • Warped Bone                              → WarpedBone                | Cantidad:   1
+    Total por pieza (Coil): 24
+
+    PIEZA: Vambrace
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Essense                          → Essence                   | Cantidad:   5
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Odogaron Mantle                          → OdoMantle                 | Cantidad:   2
+      • Wyvern Gem                               → WyvernGem                 | Cantidad:   2
+      • Warped Bone                              → WarpedBone                | Cantidad:   1
+    Total por pieza (Vambrace): 15
+
+  TOTALES POR MATERIAL - SET Prismatic:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  15
+    Monster Claw                             → Claw                      | Total:  15
+    Odogaron Sinew                           → OdoSinew                  | Total:   8
+    Odogaron Hardfang                        → OdoFang                   | Total:   8
+    Odogaron Scale                           → OdoScale                  | Total:   8
+    Ancient Bone                             → AncientBone               | Total:  14
+    Kestodon Shell                           → KestShell                 | Total:  14
+    Bullfango Head                           → BullHead                  | Total:  14
+    Odogaron Shard                           → OdoShard                  | Total:   2
+    Odogaron Mantle                          → OdoMantle                 | Total:   2
+    Wyvern Gem                               → WyvernGem                 | Total:   5
+    Warped Bone                              → WarpedBone                | Total:   5
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Prismatic: 112
+
+
+  TOTALES POR MATERIAL - HÉROE Beastmaster:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Essense                          → Essence                   | Total:  52
+    Monster Claw                             → Claw                      | Total:  51
+    Odogaron Sinew                           → OdoSinew                  | Total:  19
+    Odogaron Hardfang                        → OdoFang                   | Total:  19
+    Odogaron Scale                           → OdoScale                  | Total:  19
+    Ancient Bone                             → AncientBone               | Total:  43
+    Kestodon Shell                           → KestShell                 | Total:  43
+    Bullfango Head                           → BullHead                  | Total:  42
+    Odogaron Shard                           → OdoShard                  | Total:   2
+    Odogaron Mantle                          → OdoMantle                 | Total:   2
+    Wyvern Gem                               → WyvernGem                 | Total:  14
+    Warped Bone                              → WarpedBone                | Total:  14
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - HÉROE Beastmaster: 322
+
+======================================================================================================================================================
+HÉROE: WINDRANGER
+======================================================================================================================================================
+
+  SET 1: Base
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   6
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   4
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   4
+      • Zinogre Hardhorn                         → ZinHorn                   | Cantidad:   2
+      • Zinogre Skymerald                        → ZinSky                    | Cantidad:   2
+    Total por pieza (Helm): 18
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   6
+      • Monster Claw                             → Claw                      | Cantidad:   6
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   4
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   4
+      • Zinogre Hardhorn                         → ZinHorn                   | Cantidad:   2
+    Total por pieza (Mail): 22
+
+    PIEZA: Bow
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   3
+      • Zinogre Skymerald                        → ZinSky                    | Cantidad:   2
+    Total por pieza (Bow): 13
+
+    PIEZA: Cape
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   3
+    Total por pieza (Cape): 11
+
+    PIEZA: Quiver
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   3
+    Total por pieza (Quiver): 8
+
+  TOTALES POR MATERIAL - SET Base:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:  16
+    Monster Claw                             → Claw                      | Total:  17
+    Zinogre Electrofur                       → ZinFur                    | Total:  10
+    Zinogre Deathly Shocker                  → ZinShocker                | Total:  11
+    Zinogre Cortex                           → ZinCortex                 | Total:  10
+    Zinogre Hardhorn                         → ZinHorn                   | Total:   4
+    Zinogre Skymerald                        → ZinSky                    | Total:   4
+
+  TOTAL SUMATORIA DE MATERIALES - SET Base: 72
+
+  SET 2: Autumnal
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   3
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   3
+      • Zinogre Hardhorn                         → ZinHorn                   | Cantidad:   2
+      • Zinogre Skymerald                        → ZinSky                    | Cantidad:   1
+    Total por pieza (Helm): 12
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   3
+    Total por pieza (Mail): 12
+
+    PIEZA: Bow
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   3
+      • Zinogre Skymerald                        → ZinSky                    | Cantidad:   1
+    Total por pieza (Bow): 10
+
+    PIEZA: Cape
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   3
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+    Total por pieza (Cape): 6
+
+    PIEZA: Quiver
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   3
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   3
+    Total por pieza (Quiver): 6
+
+  TOTALES POR MATERIAL - SET Autumnal:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:   9
+    Monster Claw                             → Claw                      | Total:   9
+    Zinogre Electrofur                       → ZinFur                    | Total:   9
+    Zinogre Deathly Shocker                  → ZinShocker                | Total:   6
+    Zinogre Cortex                           → ZinCortex                 | Total:   9
+    Zinogre Hardhorn                         → ZinHorn                   | Total:   2
+    Zinogre Skymerald                        → ZinSky                    | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Autumnal: 46
+
+  SET 3: Sylvan
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   3
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   4
+      • Iron Ore                                 → IronOre                   | Cantidad:   2
+      • Zinogre Hardhorn                         → ZinHorn                   | Cantidad:   2
+      • Zinogre Skymerald                        → ZinSky                    | Cantidad:   2
+    Total por pieza (Helm): 17
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   4
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   3
+      • Large Barrel                             → LargeBarrel               | Cantidad:   2
+      • Zinogre Hardhorn                         → ZinHorn                   | Cantidad:   2
+    Total por pieza (Mail): 19
+
+    PIEZA: Bow
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   3
+      • Gunpowder                                → Gunpowder                 | Cantidad:   2
+      • Iron Ore                                 → IronOre                   | Cantidad:   2
+      • Zinogre Skymerald                        → ZinSky                    | Cantidad:   2
+    Total por pieza (Bow): 16
+
+    PIEZA: Cape
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   4
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   4
+      • Gunpowder                                → Gunpowder                 | Cantidad:   2
+    Total por pieza (Cape): 13
+
+    PIEZA: Quiver
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   4
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   3
+      • Large Barrel                             → LargeBarrel               | Cantidad:   2
+    Total por pieza (Quiver): 9
+
+  TOTALES POR MATERIAL - SET Sylvan:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:  12
+    Monster Claw                             → Claw                      | Total:  12
+    Zinogre Electrofur                       → ZinFur                    | Total:  10
+    Zinogre Deathly Shocker                  → ZinShocker                | Total:  10
+    Zinogre Cortex                           → ZinCortex                 | Total:  10
+    Large Barrel                             → LargeBarrel               | Total:   4
+    Gunpowder                                → Gunpowder                 | Total:   4
+    Iron Ore                                 → IronOre                   | Total:   4
+    Zinogre Hardhorn                         → ZinHorn                   | Total:   4
+    Zinogre Skymerald                        → ZinSky                    | Total:   4
+
+  TOTAL SUMATORIA DE MATERIALES - SET Sylvan: 74
+
+  SET 4: Prismatic
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+
+    PIEZA: Helm
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   3
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   3
+      • Iron Ore                                 → IronOre                   | Cantidad:   3
+      • Zinogre Hardhorn                         → ZinHorn                   | Cantidad:   3
+      • Zinogre Skymerald                        → ZinSky                    | Cantidad:   3
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Helm): 26
+
+    PIEZA: Mail
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   5
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   3
+      • Large Barrel                             → LargeBarrel               | Cantidad:   3
+      • Zinogre Hardhorn                         → ZinHorn                   | Cantidad:   3
+      • Prismatic Pigment                        → PrismaticPigment          | Cantidad:   1
+    Total por pieza (Mail): 25
+
+    PIEZA: Bow
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   3
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+      • Iron Ore                                 → IronOre                   | Cantidad:   3
+      • Zinogre Skymerald                        → ZinSky                    | Cantidad:   3
+    Total por pieza (Bow): 15
+
+    PIEZA: Cape
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Fur                              → Fur                       | Cantidad:   5
+      • Zinogre Electrofur                       → ZinFur                    | Cantidad:   3
+      • Zinogre Deathly Shocker                  → ZinShocker                | Cantidad:   4
+      • Gunpowder                                → Gunpowder                 | Cantidad:   3
+      • Devil's Blight                           → DevilsBlight              | Cantidad:   2
+    Total por pieza (Cape): 17
+
+    PIEZA: Quiver
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+      • Monster Claw                             → Claw                      | Cantidad:   5
+      • Zinogre Cortex                           → ZinCortex                 | Cantidad:   4
+      • Large Barrel                             → LargeBarrel               | Cantidad:   3
+      • Sinister Cloth                           → SinisterCloth             | Cantidad:   2
+    Total por pieza (Quiver): 14
+
+  TOTALES POR MATERIAL - SET Prismatic:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:  15
+    Monster Claw                             → Claw                      | Total:  15
+    Zinogre Electrofur                       → ZinFur                    | Total:  11
+    Zinogre Deathly Shocker                  → ZinShocker                | Total:  10
+    Zinogre Cortex                           → ZinCortex                 | Total:  10
+    Large Barrel                             → LargeBarrel               | Total:   6
+    Gunpowder                                → Gunpowder                 | Total:   6
+    Iron Ore                                 → IronOre                   | Total:   6
+    Zinogre Hardhorn                         → ZinHorn                   | Total:   6
+    Zinogre Skymerald                        → ZinSky                    | Total:   6
+    Sinister Cloth                           → SinisterCloth             | Total:   2
+    Devil's Blight                           → DevilsBlight              | Total:   2
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - SET Prismatic: 97
+
+
+  TOTALES POR MATERIAL - HÉROE Windranger:
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+    Monster Fur                              → Fur                       | Total:  52
+    Monster Claw                             → Claw                      | Total:  53
+    Zinogre Electrofur                       → ZinFur                    | Total:  40
+    Zinogre Deathly Shocker                  → ZinShocker                | Total:  37
+    Zinogre Cortex                           → ZinCortex                 | Total:  39
+    Large Barrel                             → LargeBarrel               | Total:  10
+    Gunpowder                                → Gunpowder                 | Total:  10
+    Iron Ore                                 → IronOre                   | Total:  10
+    Zinogre Hardhorn                         → ZinHorn                   | Total:  16
+    Zinogre Skymerald                        → ZinSky                    | Total:  16
+    Sinister Cloth                           → SinisterCloth             | Total:   2
+    Devil's Blight                           → DevilsBlight              | Total:   2
+    Prismatic Pigment                        → PrismaticPigment          | Total:   2
+
+  TOTAL SUMATORIA DE MATERIALES - HÉROE Windranger: 289
+
+
+======================================================================================================================================================
+FIN DEL REPORTE
+======================================================================================================================================================
