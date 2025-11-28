@@ -7,24 +7,32 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <style>
+        /* Forzar el color de fondo oscuro inmediatamente */
+        html, body {
+            background-color: #020617 !important; /* Azul petróleo oscuro */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0f172a; }
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #475569; }
-        body { background-color: #020617; }
     </style>
 </head>
 <body>
     <div id="root"></div>
 
-    <script 
-        type="text/babel" 
-        data-type="module" 
-        data-presets="react"
-        src="./js/app.js">
-    </script>
+    <script src="./js/constants.js"></script>
+    <script src="./js/materials.js"></script>
+    <script src="./js/heroes.js"></script>
+
+    <script type="text/babel" src="./js/app.js"></script>
 </body>
 </html>
