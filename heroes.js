@@ -1,6 +1,6 @@
-import { MAT_IDS } from './constants';
+import { MAT_IDS } from './src/data/constants.js';
 
-export const INITIAL_HEROES = [
+export const heroes = [
 
     //Courrier: Palico
     {
@@ -231,7 +231,6 @@ export const INITIAL_HEROES = [
         theme: 'red',
         skins: [
             {
-                ////Skin: Sniper Odogaron
                 id: 'sniper_odogaron_set',
                 name: 'Odogaron Armor',
                 pieces: [
@@ -286,8 +285,6 @@ export const INITIAL_HEROES = [
                     }
                 ]
             },
-
-            //Skin: Sniper Dreadwood
             {
                 id: 'sniper_dreadwood',
                 name: 'Sniper Dreadwood',
@@ -336,8 +333,6 @@ export const INITIAL_HEROES = [
                     }
                 ]
             },
-
-            //Skin: Sniper Foxfire
             {
                 id: 'sniper_foxfire',
                 name: 'Foxfire',
@@ -399,8 +394,6 @@ export const INITIAL_HEROES = [
                     }
                 ]
             },
-
-            ////Skin: Sniper Prismatic
             {
                 id: 'sniper_prismatic',
                 name: 'Prismatic',
@@ -477,7 +470,6 @@ export const INITIAL_HEROES = [
         theme: 'yellow',
         skins: [
             {
-                //Skin: Techies Base
                 id: 'techies_base_set',
                 name: 'Techies Base',
                 pieces: [
@@ -485,53 +477,63 @@ export const INITIAL_HEROES = [
                         id: 'techies_base_tank',
                         name: 'Base Tank',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 5 },
+                            { matId: MAT_IDS.Essence, amount: 6 },
                             { matId: MAT_IDS.Fur, amount: 6 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 4 },
                             { matId: MAT_IDS.Gunpowder, amount: 4 },
-                            { matId: MAT_IDS.IronOre, amount: 5 },
+                            { matId: MAT_IDS.IronOre, amount: 4 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 2 }
                         ]
                     },
                     {
                         id: 'techies_base_sticky',
                         name: 'Base Sticky Bomb',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 5 },
-                            { matId: MAT_IDS.Fur, amount: 6 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 4 },
                             { matId: MAT_IDS.Gunpowder, amount: 4 },
-                            { matId: MAT_IDS.IronOre, amount: 5 },
+                            { matId: MAT_IDS.IronOre, amount: 4 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 1 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 1 }
                         ]
                     },
                     {
                         id: 'techies_base_sign',
                         name: 'Base Sign',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 5 },
-                            { matId: MAT_IDS.Fur, amount: 6 },
-                            { matId: MAT_IDS.Gunpowder, amount: 4 },
-                            { matId: MAT_IDS.IronOre, amount: 5 },
+                            { matId: MAT_IDS.Essence, amount: 3 },
+                            { matId: MAT_IDS.Fur, amount: 5 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 3 },
+                            { matId: MAT_IDS.IronOre, amount: 4 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 1 }
                         ]
                     },
                     {
                         id: 'techies_base_spoon',
                         name: 'Base Spoon',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 1 },
-                            { matId: MAT_IDS.Gunpowder, amount: 2 },
-                            { matId: MAT_IDS.IronOre, amount: 1 },
+                            { matId: MAT_IDS.Fur, amount: 5 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 4 },
+                            { matId: MAT_IDS.Gunpowder, amount: 3 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 1 }
                         ]
                     },
                     {
                         id: 'techies_base_splee',
                         name: 'Base Splee',
                         recipe: [
-                            { matId: MAT_IDS.SinisterCloth, amount: 4 },
+                            { matId: MAT_IDS.Essence, amount: 5 },
+                            { matId: MAT_IDS.Gunpowder, amount: 3 },
+                            { matId: MAT_IDS.IronOre, amount: 4 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 1 }
                         ]
                     },
                     {
                         id: 'techies_base_squee',
                         name: 'Base Squee',
                         recipe: [
-                            { matId: MAT_IDS.DevilsBlight, amount: 4 },
+                            { matId: MAT_IDS.Fur, amount: 2 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 4 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 1 }
                         ]
                     },
                     {
@@ -552,9 +554,11 @@ export const INITIAL_HEROES = [
                         name: 'Poison Tank',
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 3 },
-                            { matId: MAT_IDS.Fur, amount: 3 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 3 },
                             { matId: MAT_IDS.Gunpowder, amount: 3 },
                             { matId: MAT_IDS.IronOre, amount: 3 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 1 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 1 }
                         ]
                     },
                     {
@@ -563,23 +567,13 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 3 },
                             { matId: MAT_IDS.Fur, amount: 3 },
-                            { matId: MAT_IDS.Gunpowder, amount: 3 },
-                            { matId: MAT_IDS.IronOre, amount: 3 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 3 },
+                            { matId: MAT_IDS.IronOre, amount: 3 }
                         ]
                     },
                     {
                         id: 'techies_poison_spleen',
                         name: 'Poison Spleen',
-                        recipe: [
-                            { matId: MAT_IDS.Essence, amount: 3 },
-                            { matId: MAT_IDS.Fur, amount: 3 },
-                            { matId: MAT_IDS.Gunpowder, amount: 3 },
-                            { matId: MAT_IDS.IronOre, amount: 3 },
-                        ]
-                    },
-                    {
-                        id: 'techies_poison_squee',
-                        name: 'Poison Squee',
                         recipe: [
                             { matId: MAT_IDS.Fur, amount: 3 },
                             { matId: MAT_IDS.Gunpowder, amount: 3 },
@@ -587,15 +581,25 @@ export const INITIAL_HEROES = [
                         ]
                     },
                     {
+                        id: 'techies_poison_squee',
+                        name: 'Poison Squee',
+                        recipe: [
+                            { matId: MAT_IDS.Fur, amount: 3 },
+                            { matId: MAT_IDS.IronOre, amount: 3 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 1 }
+                        ]
+                    },
+                    {
                         id: 'techies_poison_cannon',
                         name: 'Poison Cannon',
                         recipe: [
-                            { matId: MAT_IDS.SinisterCloth, amount: 2 },
+                            { matId: MAT_IDS.Essence, amount: 3 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 3 },
+                            { matId: MAT_IDS.Gunpowder, amount: 3 }
                         ]
                     }
                 ]
-            }
-            ,
+            },
             {
                 id: 'techies_dire_set',
                 name: 'Dire',
@@ -604,12 +608,13 @@ export const INITIAL_HEROES = [
                         id: 'techies_dire_tank',
                         name: 'Dire Tank',
                         recipe: [
-                            { matId: MAT_IDS.DevilsBlight, amount: 4 },
                             { matId: MAT_IDS.Essence, amount: 4 },
-                            { matId: MAT_IDS.Fur, amount: 4 },
+                            { matId: MAT_IDS.KirHide, amount: 2 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 3 },
                             { matId: MAT_IDS.Gunpowder, amount: 3 },
                             { matId: MAT_IDS.IronOre, amount: 3 },
-                            { matId: MAT_IDS.KirMane, amount: 2 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 2 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 2 }
                         ]
                     },
                     {
@@ -618,10 +623,10 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 4 },
                             { matId: MAT_IDS.Fur, amount: 4 },
-                            { matId: MAT_IDS.Gunpowder, amount: 3 },
-                            { matId: MAT_IDS.IronOre, amount: 3 },
                             { matId: MAT_IDS.KirMane, amount: 2 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 2 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 3 },
+                            { matId: MAT_IDS.IronOre, amount: 3 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 2 }
                         ]
                     },
                     {
@@ -630,43 +635,31 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 4 },
                             { matId: MAT_IDS.Fur, amount: 4 },
-                            { matId: MAT_IDS.Gunpowder, amount: 3 },
-                            { matId: MAT_IDS.IronOre, amount: 3 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 2 },
                             { matId: MAT_IDS.KirMane, amount: 2 },
+                            { matId: MAT_IDS.Gunpowder, amount: 3 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 1 }
                         ]
                     },
                     {
                         id: 'techies_dire_squee',
                         name: 'Dire Squee',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 2 },
-                            { matId: MAT_IDS.Fur, amount: 2 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 1 },
-                            { matId: MAT_IDS.KirHide, amount: 1 },
-                            { matId: MAT_IDS.KirMane, amount: 1 },
-                            { matId: MAT_IDS.LargeBarrel, amount: 1 },
-                            { matId: MAT_IDS.Gunpowder, amount: 1 },
-                            { matId: MAT_IDS.IronOre, amount: 1 },
-                            { matId: MAT_IDS.SinisterCloth, amount: 1 },
-                            { matId: MAT_IDS.DevilsBlight, amount: 1 },
+                            { matId: MAT_IDS.Fur, amount: 4 },
+                            { matId: MAT_IDS.KirHide, amount: 2 },
+                            { matId: MAT_IDS.IronOre, amount: 3 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 1 }
                         ]
                     },
                     {
                         id: 'techies_dire_cannon',
                         name: 'Dire Cannon',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 2 },
-                            { matId: MAT_IDS.Fur, amount: 2 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 1 },
-                            { matId: MAT_IDS.KirHide, amount: 1 },
-                            { matId: MAT_IDS.KirMane, amount: 1 },
-                            { matId: MAT_IDS.LargeBarrel, amount: 1 },
-                            { matId: MAT_IDS.Gunpowder, amount: 1 },
-                            { matId: MAT_IDS.IronOre, amount: 1 },
-                            { matId: MAT_IDS.SinisterCloth, amount: 1 },
-                            { matId: MAT_IDS.DevilsBlight, amount: 1 },
+                            { matId: MAT_IDS.KirMane, amount: 2 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 3 },
+                            { matId: MAT_IDS.Gunpowder, amount: 3 }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -677,75 +670,64 @@ export const INITIAL_HEROES = [
                         id: 'techies_prismatic_tank',
                         name: 'Prismatic Tank',
                         recipe: [
-                            { matId: MAT_IDS.DevilsBlight, amount: 2 },
                             { matId: MAT_IDS.Essence, amount: 5 },
-                            { matId: MAT_IDS.Fur, amount: 5 },
+                            { matId: MAT_IDS.KirHide, amount: 4 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 5 },
                             { matId: MAT_IDS.Gunpowder, amount: 5 },
                             { matId: MAT_IDS.IronOre, amount: 5 },
-                            { matId: MAT_IDS.KirHide, amount: 2 },
-                            { matId: MAT_IDS.KirMane, amount: 4 },
-                            { matId: MAT_IDS.SinisterCloth, amount: 2 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 3 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 2 },
+                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
                     {
                         id: 'techies_prismatic_spoon',
                         name: 'Prismatic Spoon',
                         recipe: [
-                            { matId: MAT_IDS.DevilsBlight, amount: 2 },
                             { matId: MAT_IDS.Essence, amount: 5 },
                             { matId: MAT_IDS.Fur, amount: 5 },
-                            { matId: MAT_IDS.Gunpowder, amount: 5 },
-                            { matId: MAT_IDS.IronOre, amount: 5 },
-                            { matId: MAT_IDS.KirHide, amount: 2 },
                             { matId: MAT_IDS.KirMane, amount: 4 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 4 },
-                            { matId: MAT_IDS.SinisterCloth, amount: 2 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 5 },
+                            { matId: MAT_IDS.IronOre, amount: 5 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 3 },
+                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
                     {
                         id: 'techies_prismatic_spleen',
                         name: 'Prismatic Spleen',
                         recipe: [
-                            { matId: MAT_IDS.DevilsBlight, amount: 2 },
                             { matId: MAT_IDS.Essence, amount: 5 },
                             { matId: MAT_IDS.Fur, amount: 5 },
-                            { matId: MAT_IDS.Gunpowder, amount: 5 },
-                            { matId: MAT_IDS.IronOre, amount: 5 },
-                            { matId: MAT_IDS.KirAzureHorn, amount: 3 },
-                            { matId: MAT_IDS.KirHide, amount: 2 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 4 },
                             { matId: MAT_IDS.KirMane, amount: 4 },
-                            { matId: MAT_IDS.SinisterCloth, amount: 2 },
+                            { matId: MAT_IDS.Gunpowder, amount: 5 },
+                            { matId: MAT_IDS.ElderDragGem, amount: 3 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 2 }
                         ]
                     },
                     {
                         id: 'techies_prismatic_squee',
                         name: 'Prismatic Squee',
                         recipe: [
-                            { matId: MAT_IDS.KirHide, amount: 2 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 2 },
+                            { matId: MAT_IDS.Fur, amount: 5 },
+                            { matId: MAT_IDS.KirHide, amount: 4 },
+                            { matId: MAT_IDS.IronOre, amount: 5 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 3 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 2 }
                         ]
                     },
                     {
                         id: 'techies_prismatic_cannon',
                         name: 'Prismatic Cannon',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 2 },
-                            { matId: MAT_IDS.Fur, amount: 2 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 1 },
-                            { matId: MAT_IDS.KirHide, amount: 1 },
-                            { matId: MAT_IDS.KirMane, amount: 2 },
-                            { matId: MAT_IDS.LargeBarrel, amount: 2 },
-                            { matId: MAT_IDS.Gunpowder, amount: 2 },
-                            { matId: MAT_IDS.IronOre, amount: 2 },
-                            { matId: MAT_IDS.KirAzureHorn, amount: 1 },
-                            { matId: MAT_IDS.ElderDragGem, amount: 1 },
-                            { matId: MAT_IDS.SinisterCloth, amount: 1 },
-                            { matId: MAT_IDS.DevilsBlight, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 },
+                            { matId: MAT_IDS.KirMane, amount: 4 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 5 },
+                            { matId: MAT_IDS.Gunpowder, amount: 5 }
                         ]
-                    },
+                    }
                 ]
-            },
+            }
         ]
     },
 
@@ -763,28 +745,31 @@ export const INITIAL_HEROES = [
                         id: 'antimage_kirin_jacket',
                         name: 'Kirin Jacket',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 8 },
+                            { matId: MAT_IDS.Fur, amount: 6 },
+                            { matId: MAT_IDS.Claw, amount: 6 },
                             { matId: MAT_IDS.KirHide, amount: 4 },
                             { matId: MAT_IDS.KirMane, amount: 4 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 5 },
+                            { matId: MAT_IDS.ElderDragGem, amount: 2 }
                         ]
                     },
                     {
                         id: 'antimage_kirin_blade',
                         name: 'Kirin Blade',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 8 },
-                            { matId: MAT_IDS.KirHide, amount: 4 },
-                            { matId: MAT_IDS.KirMane, amount: 4 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 5 },
+                            { matId: MAT_IDS.Fur, amount: 5 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 3 },
+                            { matId: MAT_IDS.KirMane, amount: 3 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 2 }
                         ]
                     },
                     {
                         id: 'antimage_kirin_offblade',
                         name: 'Kirin Off-hand Blade',
                         recipe: [
-                            { matId: MAT_IDS.KirHide, amount: 1 },
-                            { matId: MAT_IDS.KirMane, amount: 1 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 3 },
+                            { matId: MAT_IDS.KirHide, amount: 3 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 2 }
                         ]
                     },
                     {
@@ -793,7 +778,7 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Fur, amount: 5 },
                             { matId: MAT_IDS.Claw, amount: 5 },
-                            { matId: MAT_IDS.KirHide, amount: 2 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 2 },
                             { matId: MAT_IDS.ElderDragGem, amount: 2 }
                         ]
                     },
@@ -801,9 +786,9 @@ export const INITIAL_HEROES = [
                         id: 'antimage_kirin_persona',
                         name: 'Kirin Persona',
                         recipe: [
-                            { matId: MAT_IDS.RathRuby, amount: 2 },
-                            { matId: MAT_IDS.RathPlate, amount: 2 },
-                            { matId: MAT_IDS.KirAzureHorn, amount: 2 }
+                            { matId: MAT_IDS.KirThunderhorn, amount: 2 },
+                            { matId: MAT_IDS.KirHide, amount: 2 },
+                            { matId: MAT_IDS.KirMane, amount: 2 }
                         ]
                     }
                 ]
@@ -817,9 +802,10 @@ export const INITIAL_HEROES = [
                         name: 'Icewrack Jacket',
                         recipe: [
                             { matId: MAT_IDS.Fur, amount: 3 },
+                            { matId: MAT_IDS.Claw, amount: 3 },
                             { matId: MAT_IDS.KirHide, amount: 3 },
                             { matId: MAT_IDS.KirMane, amount: 3 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 4 },
+                            { matId: MAT_IDS.ElderDragGem, amount: 2 }
                         ]
                     },
                     {
@@ -827,21 +813,30 @@ export const INITIAL_HEROES = [
                         name: 'Icewrack Blade',
                         recipe: [
                             { matId: MAT_IDS.Fur, amount: 3 },
-                            { matId: MAT_IDS.KirHide, amount: 3 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 3 },
                             { matId: MAT_IDS.KirMane, amount: 3 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 4 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 1 }
                         ]
                     },
                     {
                         id: 'antimage_icewrack_offblade',
                         name: 'Icewrack Off-hand Blade',
                         recipe: [
-                            { matId: MAT_IDS.KirThunderhorn, amount: 1 },
+                            { matId: MAT_IDS.Claw, amount: 3 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 3 },
+                            { matId: MAT_IDS.KirHide, amount: 3 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 1 }
+                        ]
+                    },
+                    {
+                        id: 'antimage_icewrack_horn',
+                        name: 'Icewrack Horn',
+                        recipe: [
+                            { matId: MAT_IDS.KirThunderhorn, amount: 3 }
                         ]
                     }
                 ]
-            }
-            ,
+            },
             {
                 id: 'antimage_golden_set',
                 name: 'Golden',
@@ -851,10 +846,11 @@ export const INITIAL_HEROES = [
                         name: 'Golden Jacket',
                         recipe: [
                             { matId: MAT_IDS.Fur, amount: 4 },
+                            { matId: MAT_IDS.Claw, amount: 4 },
+                            { matId: MAT_IDS.RathCarapache, amount: 4 },
                             { matId: MAT_IDS.KirHide, amount: 3 },
                             { matId: MAT_IDS.KirMane, amount: 3 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 4 },
-                            { matId: MAT_IDS.RathTail, amount: 4 },
+                            { matId: MAT_IDS.ElderDragGem, amount: 2 }
                         ]
                     },
                     {
@@ -862,51 +858,32 @@ export const INITIAL_HEROES = [
                         name: 'Golden Blade',
                         recipe: [
                             { matId: MAT_IDS.Fur, amount: 4 },
-                            { matId: MAT_IDS.KirAzureHorn, amount: 3 },
-                            { matId: MAT_IDS.KirHide, amount: 3 },
+                            { matId: MAT_IDS.RathTail, amount: 4 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 3 },
                             { matId: MAT_IDS.KirMane, amount: 3 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 4 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 1 }
                         ]
                     },
                     {
                         id: 'antimage_golden_offblade',
-                        name: 'Golden Offblade',
+                        name: 'Golden Off-hand Blade',
                         recipe: [
-                            { matId: MAT_IDS.KirThunderhorn, amount: 1 },
+                            { matId: MAT_IDS.Claw, amount: 4 },
+                            { matId: MAT_IDS.RathWing, amount: 4 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 3 },
+                            { matId: MAT_IDS.KirHide, amount: 3 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 1 }
                         ]
                     },
                     {
                         id: 'antimage_golden_horn',
                         name: 'Golden Horn',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 1 },
-                            { matId: MAT_IDS.Claw, amount: 1 },
-                            { matId: MAT_IDS.RathCarapache, amount: 1 },
-                            { matId: MAT_IDS.RathWing, amount: 1 },
-                            { matId: MAT_IDS.RathTail, amount: 1 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 1 },
-                            { matId: MAT_IDS.KirHide, amount: 1 },
-                            { matId: MAT_IDS.KirMane, amount: 1 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 3 },
                             { matId: MAT_IDS.KirAzureHorn, amount: 1 },
-                            { matId: MAT_IDS.ElderDragGem, amount: 1 },
+                            { matId: MAT_IDS.ElderDragGem, amount: 1 }
                         ]
-                    },
-                    {
-                        id: 'antimage_golden_persona',
-                        name: 'Golden Persona',
-                        recipe: [
-                            { matId: MAT_IDS.Fur, amount: 1 },
-                            { matId: MAT_IDS.Claw, amount: 1 },
-                            { matId: MAT_IDS.RathCarapache, amount: 1 },
-                            { matId: MAT_IDS.RathWing, amount: 1 },
-                            { matId: MAT_IDS.RathTail, amount: 1 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 1 },
-                            { matId: MAT_IDS.KirHide, amount: 1 },
-                            { matId: MAT_IDS.KirMane, amount: 1 },
-                            { matId: MAT_IDS.KirAzureHorn, amount: 1 },
-                            { matId: MAT_IDS.ElderDragGem, amount: 1 },
-                        ]
-                    },
+                    }
                 ]
             },
             {
@@ -917,62 +894,50 @@ export const INITIAL_HEROES = [
                         id: 'antimage_prismatic_jacket',
                         name: 'Prismatic Jacket',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 7 },
-                            { matId: MAT_IDS.KirAzureHorn, amount: 3 },
+                            { matId: MAT_IDS.Fur, amount: 10 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.RathCarapache, amount: 6 },
                             { matId: MAT_IDS.KirHide, amount: 4 },
                             { matId: MAT_IDS.KirMane, amount: 4 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 6 },
-                            { matId: MAT_IDS.RathTail, amount: 3 },
-                            { matId: MAT_IDS.RathWing, amount: 3 },
+                            { matId: MAT_IDS.RathRuby, amount: 2 },
+                            { matId: MAT_IDS.ElderDragGem, amount: 4 }
                         ]
                     },
                     {
                         id: 'antimage_prismatic_blade',
                         name: 'Prismatic Blade',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 7 },
-                            { matId: MAT_IDS.KirAzureHorn, amount: 3 },
-                            { matId: MAT_IDS.KirHide, amount: 4 },
+                            { matId: MAT_IDS.Fur, amount: 5 },
+                            { matId: MAT_IDS.RathTail, amount: 6 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 4 },
                             { matId: MAT_IDS.KirMane, amount: 4 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 6 },
-                            { matId: MAT_IDS.RathTail, amount: 3 },
-                            { matId: MAT_IDS.RathWing, amount: 3 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 2 },
+                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
                     {
                         id: 'antimage_prismatic_offblade',
-                        name: 'Prismatic Offblade',
+                        name: 'Prismatic Off-hand Blade',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 2 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.RathWing, amount: 6 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 4 },
+                            { matId: MAT_IDS.KirHide, amount: 4 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 2 },
+                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
                     {
                         id: 'antimage_prismatic_horn',
                         name: 'Prismatic Horn',
                         recipe: [
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.KirThunderhorn, amount: 4 },
                             { matId: MAT_IDS.RathPlate, amount: 2 },
+                            { matId: MAT_IDS.KirAzureHorn, amount: 2 },
+                            { matId: MAT_IDS.ElderDragGem, amount: 2 }
                         ]
-                    },
-                    {
-                        id: 'antimage_prismatic_persona',
-                        name: 'Prismatic Persona',
-                        recipe: [
-                            { matId: MAT_IDS.Fur, amount: 2 },
-                            { matId: MAT_IDS.Claw, amount: 2 },
-                            { matId: MAT_IDS.RathCarapache, amount: 1 },
-                            { matId: MAT_IDS.RathWing, amount: 1 },
-                            { matId: MAT_IDS.RathTail, amount: 1 },
-                            { matId: MAT_IDS.KirThunderhorn, amount: 2 },
-                            { matId: MAT_IDS.KirHide, amount: 1 },
-                            { matId: MAT_IDS.KirMane, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
-                            { matId: MAT_IDS.KirAzureHorn, amount: 1 },
-                            { matId: MAT_IDS.ElderDragGem, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 },
-                        ]
-                    },
+                    }
                 ]
             }
         ]
@@ -1018,7 +983,7 @@ export const INITIAL_HEROES = [
                             { matId: MAT_IDS.Essence, amount: 5 },
                             { matId: MAT_IDS.Claw, amount: 5 },
                             { matId: MAT_IDS.RathCarapache, amount: 3 },
-                            { matId: MAT_IDS.RathRuby, amount: 2 }
+                            { matId: MAT_IDS.RathPlate, amount: 2 }
                         ]
                     },
                     {
@@ -1027,7 +992,7 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.RathWing, amount: 3 },
                             { matId: MAT_IDS.RathTail, amount: 3 },
-                            { matId: MAT_IDS.RathPlate, amount: 2 }
+                            { matId: MAT_IDS.RathRuby, amount: 2 }
                         ]
                     },
                     {
@@ -1059,7 +1024,7 @@ export const INITIAL_HEROES = [
                             { matId: MAT_IDS.Claw, amount: 4 },
                             { matId: MAT_IDS.RathWing, amount: 3 },
                             { matId: MAT_IDS.RathTail, amount: 3 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 }
+                            { matId: MAT_IDS.RathPlate, amount: 1 }
                         ]
                     },
                     {
@@ -1069,7 +1034,7 @@ export const INITIAL_HEROES = [
                             { matId: MAT_IDS.Essence, amount: 4 },
                             { matId: MAT_IDS.Claw, amount: 4 },
                             { matId: MAT_IDS.RathCarapache, amount: 3 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 }
+                            { matId: MAT_IDS.RathRuby, amount: 1 }
                         ]
                     },
                     {
@@ -1078,7 +1043,7 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Claw, amount: 4 },
                             { matId: MAT_IDS.RathCarapache, amount: 3 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 }
+                            { matId: MAT_IDS.RathPlate, amount: 1 }
                         ]
                     },
                     {
@@ -1087,7 +1052,7 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.RathWing, amount: 3 },
                             { matId: MAT_IDS.RathTail, amount: 3 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 }
+                            { matId: MAT_IDS.RathRuby, amount: 1 }
                         ]
                     },
                     {
@@ -1095,7 +1060,7 @@ export const INITIAL_HEROES = [
                         name: 'Imperium Coil',
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 4 },
-                            { matId: MAT_IDS.RathCarapache, amount: 3 }
+                            { matId: MAT_IDS.RathWing, amount: 3 }
                         ]
                     },
                     {
@@ -1106,8 +1071,7 @@ export const INITIAL_HEROES = [
                         ]
                     }
                 ]
-            }
-            ,
+            },
             {
                 id: 'dk_deep_vault_set',
                 name: 'Deep Vault',
@@ -1117,97 +1081,64 @@ export const INITIAL_HEROES = [
                         name: 'Deep Vault Sword',
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 3 },
-                            { matId: MAT_IDS.Claw, amount: 2 },
-                            { matId: MAT_IDS.RathCarapache, amount: 3 },
+                            { matId: MAT_IDS.Claw, amount: 3 },
                             { matId: MAT_IDS.RathWing, amount: 3 },
-                            { matId: MAT_IDS.RathTail, amount: 2 },
-                            { matId: MAT_IDS.AncientBone, amount: 1 },
-                            { matId: MAT_IDS.Kestshell, amount: 1 },
-                            { matId: MAT_IDS.BullHead, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
+                            { matId: MAT_IDS.RathTail, amount: 3 },
+                            { matId: MAT_IDS.BullHead, amount: 2 },
+                            { matId: MAT_IDS.RathRuby, amount: 2 },
+                            { matId: MAT_IDS.RathPlate, amount: 2 }
                         ]
                     },
                     {
                         id: 'dk_deep_vault_shield',
                         name: 'Deep Vault Shield',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 2 },
-                            { matId: MAT_IDS.Claw, amount: 2 },
-                            { matId: MAT_IDS.RathCarapache, amount: 2 },
-                            { matId: MAT_IDS.RathWing, amount: 2 },
-                            { matId: MAT_IDS.RathTail, amount: 2 },
-                            { matId: MAT_IDS.AncientBone, amount: 1 },
-                            { matId: MAT_IDS.Kestshell, amount: 1 },
-                            { matId: MAT_IDS.BullHead, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
+                            { matId: MAT_IDS.Essence, amount: 3 },
+                            { matId: MAT_IDS.Claw, amount: 3 },
+                            { matId: MAT_IDS.RathCarapache, amount: 3 },
+                            { matId: MAT_IDS.RathWing, amount: 3 },
+                            { matId: MAT_IDS.RathTail, amount: 3 },
+                            { matId: MAT_IDS.KestShell, amount: 2 }
                         ]
                     },
                     {
                         id: 'dk_deep_vault_mail',
                         name: 'Deep Vault Mail',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 2 },
-                            { matId: MAT_IDS.Claw, amount: 2 },
-                            { matId: MAT_IDS.RathCarapache, amount: 2 },
-                            { matId: MAT_IDS.RathWing, amount: 2 },
-                            { matId: MAT_IDS.RathTail, amount: 2 },
-                            { matId: MAT_IDS.AncientBone, amount: 1 },
-                            { matId: MAT_IDS.Kestshell, amount: 1 },
-                            { matId: MAT_IDS.BullHead, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
+                            { matId: MAT_IDS.Essence, amount: 3 },
+                            { matId: MAT_IDS.Claw, amount: 3 },
+                            { matId: MAT_IDS.RathCarapache, amount: 3 },
+                            { matId: MAT_IDS.KestShell, amount: 2 },
+                            { matId: MAT_IDS.RathPlate, amount: 2 }
                         ]
                     },
                     {
                         id: 'dk_deep_vault_helm',
                         name: 'Deep Vault Helm',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 2 },
-                            { matId: MAT_IDS.Claw, amount: 1 },
-                            { matId: MAT_IDS.RathCarapache, amount: 2 },
-                            { matId: MAT_IDS.RathWing, amount: 2 },
-                            { matId: MAT_IDS.RathTail, amount: 1 },
-                            { matId: MAT_IDS.AncientBone, amount: 1 },
-                            { matId: MAT_IDS.Kestshell, amount: 1 },
-                            { matId: MAT_IDS.BullHead, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
+                            { matId: MAT_IDS.RathWing, amount: 3 },
+                            { matId: MAT_IDS.RathTail, amount: 3 },
+                            { matId: MAT_IDS.AncientBone, amount: 2 },
+                            { matId: MAT_IDS.RathRuby, amount: 2 }
                         ]
                     },
                     {
                         id: 'dk_deep_vault_coil',
                         name: 'Deep Vault Coil',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 1 },
-                            { matId: MAT_IDS.Claw, amount: 1 },
-                            { matId: MAT_IDS.RathCarapache, amount: 1 },
-                            { matId: MAT_IDS.RathWing, amount: 1 },
-                            { matId: MAT_IDS.RathTail, amount: 1 },
-                            { matId: MAT_IDS.AncientBone, amount: 1 },
-                            { matId: MAT_IDS.Kestshell, amount: 1 },
-                            { matId: MAT_IDS.BullHead, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
+                            { matId: MAT_IDS.Essence, amount: 3 },
+                            { matId: MAT_IDS.RathWing, amount: 3 },
+                            { matId: MAT_IDS.BullHead, amount: 2 }
                         ]
                     },
                     {
                         id: 'dk_deep_vault_braces',
                         name: 'Deep Vault Braces',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 1 },
-                            { matId: MAT_IDS.Claw, amount: 1 },
-                            { matId: MAT_IDS.RathCarapache, amount: 1 },
-                            { matId: MAT_IDS.RathWing, amount: 1 },
-                            { matId: MAT_IDS.RathTail, amount: 1 },
-                            { matId: MAT_IDS.AncientBone, amount: 1 },
-                            { matId: MAT_IDS.Kestshell, amount: 1 },
-                            { matId: MAT_IDS.BullHead, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
+                            { matId: MAT_IDS.RathCarapache, amount: 5 },
+                            { matId: MAT_IDS.AncientBone, amount: 2 }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -1219,115 +1150,68 @@ export const INITIAL_HEROES = [
                         name: 'Prismatic Sword',
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 5 },
-                            { matId: MAT_IDS.Claw, amount: 4 },
-                            { matId: MAT_IDS.RathCarapache, amount: 4 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
                             { matId: MAT_IDS.RathWing, amount: 4 },
-                            { matId: MAT_IDS.RathTail, amount: 3 },
-                            { matId: MAT_IDS.AncientBone, amount: 2 },
-                            { matId: MAT_IDS.Kestshell, amount: 2 },
-                            { matId: MAT_IDS.BullHead, amount: 2 },
+                            { matId: MAT_IDS.RathTail, amount: 4 },
+                            { matId: MAT_IDS.BullHead, amount: 4 },
                             { matId: MAT_IDS.RathRuby, amount: 2 },
-                            { matId: MAT_IDS.RathPlate, amount: 2 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
-                            { matId: MAT_IDS.WarpedBone, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 },
+                            { matId: MAT_IDS.RathPlate, amount: 4 },
+                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
                     {
                         id: 'dk_prismatic_shield',
                         name: 'Prismatic Shield',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 4 },
-                            { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.RathCarapache, amount: 3 },
-                            { matId: MAT_IDS.RathWing, amount: 3 },
-                            { matId: MAT_IDS.RathTail, amount: 2 },
-                            { matId: MAT_IDS.AncientBone, amount: 2 },
-                            { matId: MAT_IDS.Kestshell, amount: 2 },
-                            { matId: MAT_IDS.BullHead, amount: 2 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
-                            { matId: MAT_IDS.WarpedBone, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 },
+                            { matId: MAT_IDS.Essence, amount: 5 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.RathCarapache, amount: 4 },
+                            { matId: MAT_IDS.RathWing, amount: 4 },
+                            { matId: MAT_IDS.RathTail, amount: 4 },
+                            { matId: MAT_IDS.KestShell, amount: 4 },
+                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
                     {
                         id: 'dk_prismatic_mail',
                         name: 'Prismatic Mail',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 4 },
-                            { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.RathCarapache, amount: 3 },
-                            { matId: MAT_IDS.RathWing, amount: 3 },
-                            { matId: MAT_IDS.RathTail, amount: 2 },
-                            { matId: MAT_IDS.AncientBone, amount: 2 },
-                            { matId: MAT_IDS.Kestshell, amount: 2 },
-                            { matId: MAT_IDS.BullHead, amount: 2 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
-                            { matId: MAT_IDS.WarpedBone, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 },
+                            { matId: MAT_IDS.Essence, amount: 5 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.RathCarapache, amount: 4 },
+                            { matId: MAT_IDS.KestShell, amount: 4 },
+                            { matId: MAT_IDS.RathPlate, amount: 2 }
                         ]
                     },
                     {
                         id: 'dk_prismatic_helm',
                         name: 'Prismatic Helm',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 3 },
-                            { matId: MAT_IDS.Claw, amount: 2 },
-                            { matId: MAT_IDS.RathCarapache, amount: 2 },
-                            { matId: MAT_IDS.RathWing, amount: 2 },
-                            { matId: MAT_IDS.RathTail, amount: 2 },
-                            { matId: MAT_IDS.AncientBone, amount: 1 },
-                            { matId: MAT_IDS.Kestshell, amount: 1 },
-                            { matId: MAT_IDS.BullHead, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
-                            { matId: MAT_IDS.WarpedBone, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 },
+                            { matId: MAT_IDS.RathWing, amount: 4 },
+                            { matId: MAT_IDS.RathTail, amount: 4 },
+                            { matId: MAT_IDS.AncientBone, amount: 4 },
+                            { matId: MAT_IDS.RathRuby, amount: 4 }
                         ]
                     },
                     {
                         id: 'dk_prismatic_coil',
                         name: 'Prismatic Coil',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 2 },
-                            { matId: MAT_IDS.Claw, amount: 2 },
-                            { matId: MAT_IDS.RathCarapache, amount: 1 },
-                            { matId: MAT_IDS.RathWing, amount: 2 },
-                            { matId: MAT_IDS.RathTail, amount: 1 },
-                            { matId: MAT_IDS.AncientBone, amount: 1 },
-                            { matId: MAT_IDS.Kestshell, amount: 1 },
-                            { matId: MAT_IDS.BullHead, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
-                            { matId: MAT_IDS.WarpedBone, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 },
+                            { matId: MAT_IDS.Essence, amount: 5 },
+                            { matId: MAT_IDS.RathWing, amount: 4 },
+                            { matId: MAT_IDS.BullHead, amount: 4 },
+                            { matId: MAT_IDS.WarpedBone, amount: 2 }
                         ]
                     },
                     {
                         id: 'dk_prismatic_braces',
                         name: 'Prismatic Braces',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 2 },
-                            { matId: MAT_IDS.Claw, amount: 2 },
-                            { matId: MAT_IDS.RathCarapache, amount: 1 },
-                            { matId: MAT_IDS.RathWing, amount: 2 },
-                            { matId: MAT_IDS.RathTail, amount: 1 },
-                            { matId: MAT_IDS.AncientBone, amount: 1 },
-                            { matId: MAT_IDS.Kestshell, amount: 1 },
-                            { matId: MAT_IDS.BullHead, amount: 1 },
-                            { matId: MAT_IDS.RathRuby, amount: 1 },
-                            { matId: MAT_IDS.RathPlate, amount: 1 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
-                            { matId: MAT_IDS.WarpedBone, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 },
+                            { matId: MAT_IDS.RathCarapache, amount: 6 },
+                            { matId: MAT_IDS.AncientBone, amount: 4 },
+                            { matId: MAT_IDS.WyvernGem, amount: 2 }
                         ]
-                    },
+                    }
                 ]
             }
         ]
@@ -1360,9 +1244,9 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 6 },
                             { matId: MAT_IDS.AncientBone, amount: 4 },
-                            { matId: MAT_IDS.Kestshell, amount: 4 },
+                            { matId: MAT_IDS.KestShell, amount: 4 },
                             { matId: MAT_IDS.BullHead, amount: 5 },
-                            { matId: MAT_IDS.WarpedBone, amount: 2 }
+                            { matId: MAT_IDS.WyvernGem, amount: 2 }
                         ]
                     },
                     {
@@ -1371,9 +1255,9 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Claw, amount: 5 },
                             { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 5 },
+                            { matId: MAT_IDS.KestShell, amount: 5 },
                             { matId: MAT_IDS.BullHead, amount: 3 },
-                            { matId: MAT_IDS.WyvernGem, amount: 2 }
+                            { matId: MAT_IDS.WarpedBone, amount: 2 }
                         ]
                     },
                     {
@@ -1382,7 +1266,7 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 5 },
                             { matId: MAT_IDS.AncientBone, amount: 5 },
-                            { matId: MAT_IDS.Kestshell, amount: 3 },
+                            { matId: MAT_IDS.KestShell, amount: 3 },
                             { matId: MAT_IDS.BullHead, amount: 3 }
                         ]
                     },
@@ -1419,8 +1303,8 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 3 },
                             { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 3 }
+                            { matId: MAT_IDS.KestShell, amount: 3 },
+                            { matId: MAT_IDS.BullHead, amount: 3 }
                         ]
                     },
                     {
@@ -1430,7 +1314,7 @@ export const INITIAL_HEROES = [
                             { matId: MAT_IDS.Essence, amount: 3 },
                             { matId: MAT_IDS.Claw, amount: 3 },
                             { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 3 }
+                            { matId: MAT_IDS.KestShell, amount: 3 }
                         ]
                     },
                     {
@@ -1439,7 +1323,7 @@ export const INITIAL_HEROES = [
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 3 },
                             { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 3 }
+                            { matId: MAT_IDS.BullHead, amount: 3 }
                         ]
                     },
                     {
@@ -1460,11 +1344,12 @@ export const INITIAL_HEROES = [
                         id: 'beastmaster_golden_chain',
                         name: 'Golden Chainblade',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 4 },
                             { matId: MAT_IDS.Claw, amount: 4 },
                             { matId: MAT_IDS.OdoSinew, amount: 3 },
-                            { matId: MAT_IDS.OdoFang, amount: 2 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 }
+                            { matId: MAT_IDS.OdoFang, amount: 3 },
+                            { matId: MAT_IDS.OdoScale, amount: 3 },
+                            { matId: MAT_IDS.WyvernGem, amount: 2 },
+                            { matId: MAT_IDS.WarpedBone, amount: 2 }
                         ]
                     },
                     {
@@ -1472,37 +1357,40 @@ export const INITIAL_HEROES = [
                         name: 'Golden Helm',
                         recipe: [
                             { matId: MAT_IDS.Essence, amount: 4 },
-                            { matId: MAT_IDS.Claw, amount: 4 },
+                            { matId: MAT_IDS.OdoScale, amount: 2 },
                             { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 3 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 }
+                            { matId: MAT_IDS.KestShell, amount: 3 },
+                            { matId: MAT_IDS.BullHead, amount: 5 }
                         ]
                     },
                     {
                         id: 'beastmaster_golden_mail',
                         name: 'Golden Mail',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 4 },
                             { matId: MAT_IDS.Claw, amount: 4 },
+                            { matId: MAT_IDS.OdoSinew, amount: 2 },
                             { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 3 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 }
+                            { matId: MAT_IDS.KestShell, amount: 5 },
+                            { matId: MAT_IDS.BullHead, amount: 3 }
                         ]
                     },
                     {
                         id: 'beastmaster_golden_coil',
                         name: 'Golden Coil',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 3 },
-                            { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 2 }
+                            { matId: MAT_IDS.Essence, amount: 4 },
+                            { matId: MAT_IDS.OdoFang, amount: 2 },
+                            { matId: MAT_IDS.AncientBone, amount: 5 },
+                            { matId: MAT_IDS.KestShell, amount: 3 },
+                            { matId: MAT_IDS.BullHead, amount: 3 }
                         ]
                     },
                     {
                         id: 'beastmaster_golden_vambrace',
                         name: 'Golden Vambrace',
                         recipe: [
+                            { matId: MAT_IDS.Essence, amount: 4 },
+                            { matId: MAT_IDS.Claw, amount: 4 },
                             { matId: MAT_IDS.WyvernGem, amount: 1 },
                             { matId: MAT_IDS.WarpedBone, amount: 1 }
                         ]
@@ -1517,13 +1405,12 @@ export const INITIAL_HEROES = [
                         id: 'beastmaster_prismatic_chain',
                         name: 'Prismatic Chainblade',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 3 },
-                            { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.OdoSinew, amount: 2 },
-                            { matId: MAT_IDS.OdoFang, amount: 2 },
-                            { matId: MAT_IDS.OdoScale, amount: 2 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
-                            { matId: MAT_IDS.WarpedBone, amount: 1 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.OdoSinew, amount: 4 },
+                            { matId: MAT_IDS.OdoFang, amount: 4 },
+                            { matId: MAT_IDS.OdoScale, amount: 4 },
+                            { matId: MAT_IDS.WyvernGem, amount: 3 },
+                            { matId: MAT_IDS.WarpedBone, amount: 3 },
                             { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
@@ -1531,11 +1418,11 @@ export const INITIAL_HEROES = [
                         id: 'beastmaster_prismatic_helm',
                         name: 'Prismatic Helm',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 3 },
-                            { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 3 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
+                            { matId: MAT_IDS.Essence, amount: 5 },
+                            { matId: MAT_IDS.OdoScale, amount: 4 },
+                            { matId: MAT_IDS.AncientBone, amount: 4 },
+                            { matId: MAT_IDS.KestShell, amount: 4 },
+                            { matId: MAT_IDS.BullHead, amount: 6 },
                             { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
@@ -1543,32 +1430,35 @@ export const INITIAL_HEROES = [
                         id: 'beastmaster_prismatic_mail',
                         name: 'Prismatic Mail',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 3 },
-                            { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 3 },
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.OdoSinew, amount: 4 },
+                            { matId: MAT_IDS.AncientBone, amount: 4 },
+                            { matId: MAT_IDS.KestShell, amount: 6 },
+                            { matId: MAT_IDS.BullHead, amount: 4 },
+                            { matId: MAT_IDS.OdoShard, amount: 2 }
                         ]
                     },
                     {
                         id: 'beastmaster_prismatic_coil',
                         name: 'Prismatic Coil',
                         recipe: [
-                            { matId: MAT_IDS.Essence, amount: 3 },
-                            { matId: MAT_IDS.AncientBone, amount: 3 },
-                            { matId: MAT_IDS.Kestshell, amount: 2 },
-                            { matId: MAT_IDS.WarpedBone, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
+                            { matId: MAT_IDS.Essence, amount: 5 },
+                            { matId: MAT_IDS.OdoFang, amount: 4 },
+                            { matId: MAT_IDS.AncientBone, amount: 6 },
+                            { matId: MAT_IDS.KestShell, amount: 4 },
+                            { matId: MAT_IDS.BullHead, amount: 4 },
+                            { matId: MAT_IDS.WarpedBone, amount: 1 }
                         ]
                     },
                     {
                         id: 'beastmaster_prismatic_vambrace',
                         name: 'Prismatic Vambrace',
                         recipe: [
-                            { matId: MAT_IDS.WyvernGem, amount: 1 },
-                            { matId: MAT_IDS.WarpedBone, amount: 1 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
+                            { matId: MAT_IDS.Essence, amount: 5 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.OdoMantle, amount: 2 },
+                            { matId: MAT_IDS.WyvernGem, amount: 2 },
+                            { matId: MAT_IDS.WarpedBone, amount: 1 }
                         ]
                     }
                 ]
@@ -1615,7 +1505,7 @@ export const INITIAL_HEROES = [
                             { matId: MAT_IDS.Fur, amount: 5 },
                             { matId: MAT_IDS.ZinFur, amount: 3 },
                             { matId: MAT_IDS.ZinCortex, amount: 3 },
-                            { matId: MAT_IDS.ZinHorn, amount: 2 }
+                            { matId: MAT_IDS.ZinSky, amount: 2 }
                         ]
                     },
                     {
@@ -1632,7 +1522,7 @@ export const INITIAL_HEROES = [
                         name: 'Zinogre Quiver',
                         recipe: [
                             { matId: MAT_IDS.Claw, amount: 5 },
-                            { matId: MAT_IDS.ZinShocker, amount: 3 }
+                            { matId: MAT_IDS.ZinCortex, amount: 3 }
                         ]
                     }
                 ]
@@ -1685,12 +1575,11 @@ export const INITIAL_HEROES = [
                         name: 'Autumnal Quiver',
                         recipe: [
                             { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.ZinShocker, amount: 3 }
+                            { matId: MAT_IDS.ZinCortex, amount: 3 }
                         ]
                     }
                 ]
-            }
-            ,
+            },
             {
                 id: 'windranger_sylvan_set',
                 name: 'Sylvan',
@@ -1699,45 +1588,55 @@ export const INITIAL_HEROES = [
                         id: 'windranger_sylvan_helm',
                         name: 'Sylvan Helm',
                         recipe: [
-                            { matId: MAT_IDS.Claw, amount: 3 },
+                            { matId: MAT_IDS.Claw, amount: 4 },
                             { matId: MAT_IDS.ZinShocker, amount: 3 },
-                            { matId: MAT_IDS.ZinCortex, amount: 3 },
-                            { matId: MAT_IDS.ZinHorn, amount: 2 }
+                            { matId: MAT_IDS.ZinCortex, amount: 4 },
+                            { matId: MAT_IDS.IronOre, amount: 2 },
+                            { matId: MAT_IDS.ZinHorn, amount: 2 },
+                            { matId: MAT_IDS.ZinSky, amount: 2 }
                         ]
                     },
                     {
                         id: 'windranger_sylvan_mail',
                         name: 'Sylvan Mail',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 3 },
-                            { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.ZinFur, amount: 3 },
-                            { matId: MAT_IDS.ZinShocker, amount: 2 }
+                            { matId: MAT_IDS.Fur, amount: 4 },
+                            { matId: MAT_IDS.Claw, amount: 4 },
+                            { matId: MAT_IDS.ZinFur, amount: 4 },
+                            { matId: MAT_IDS.ZinShocker, amount: 3 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 2 },
+                            { matId: MAT_IDS.ZinHorn, amount: 2 }
                         ]
                     },
                     {
                         id: 'windranger_sylvan_bow',
                         name: 'Sylvan Bow',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 3 },
+                            { matId: MAT_IDS.Fur, amount: 4 },
                             { matId: MAT_IDS.ZinFur, amount: 3 },
-                            { matId: MAT_IDS.ZinCortex, amount: 3 }
+                            { matId: MAT_IDS.ZinCortex, amount: 3 },
+                            { matId: MAT_IDS.Gunpowder, amount: 2 },
+                            { matId: MAT_IDS.IronOre, amount: 2 },
+                            { matId: MAT_IDS.ZinSky, amount: 2 }
                         ]
                     },
                     {
                         id: 'windranger_sylvan_cape',
                         name: 'Sylvan Cape',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 2 },
-                            { matId: MAT_IDS.ZinFur, amount: 2 }
+                            { matId: MAT_IDS.Fur, amount: 4 },
+                            { matId: MAT_IDS.ZinFur, amount: 3 },
+                            { matId: MAT_IDS.ZinShocker, amount: 4 },
+                            { matId: MAT_IDS.Gunpowder, amount: 2 }
                         ]
                     },
                     {
                         id: 'windranger_sylvan_quiver',
                         name: 'Sylvan Quiver',
                         recipe: [
-                            { matId: MAT_IDS.Claw, amount: 2 },
-                            { matId: MAT_IDS.ZinShocker, amount: 2 }
+                            { matId: MAT_IDS.Claw, amount: 4 },
+                            { matId: MAT_IDS.ZinCortex, amount: 3 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 2 }
                         ]
                     }
                 ]
@@ -1750,10 +1649,13 @@ export const INITIAL_HEROES = [
                         id: 'windranger_prismatic_helm',
                         name: 'Prismatic Helm',
                         recipe: [
-                            { matId: MAT_IDS.Claw, amount: 4 },
-                            { matId: MAT_IDS.ZinShocker, amount: 4 },
-                            { matId: MAT_IDS.ZinCortex, amount: 4 },
-                            { matId: MAT_IDS.ZinHorn, amount: 2 },
+                            { matId: MAT_IDS.Fur, amount: 5 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.ZinShocker, amount: 3 },
+                            { matId: MAT_IDS.ZinCortex, amount: 3 },
+                            { matId: MAT_IDS.IronOre, amount: 3 },
+                            { matId: MAT_IDS.ZinHorn, amount: 3 },
+                            { matId: MAT_IDS.ZinSky, amount: 3 },
                             { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
@@ -1761,10 +1663,12 @@ export const INITIAL_HEROES = [
                         id: 'windranger_prismatic_mail',
                         name: 'Prismatic Mail',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 4 },
-                            { matId: MAT_IDS.Claw, amount: 4 },
-                            { matId: MAT_IDS.ZinFur, amount: 4 },
+                            { matId: MAT_IDS.Fur, amount: 5 },
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.ZinFur, amount: 5 },
                             { matId: MAT_IDS.ZinShocker, amount: 3 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 3 },
+                            { matId: MAT_IDS.ZinHorn, amount: 3 },
                             { matId: MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
@@ -1772,28 +1676,32 @@ export const INITIAL_HEROES = [
                         id: 'windranger_prismatic_bow',
                         name: 'Prismatic Bow',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 4 },
                             { matId: MAT_IDS.ZinFur, amount: 3 },
                             { matId: MAT_IDS.ZinCortex, amount: 3 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
+                            { matId: MAT_IDS.Gunpowder, amount: 3 },
+                            { matId: MAT_IDS.IronOre, amount: 3 },
+                            { matId: MAT_IDS.ZinSky, amount: 3 }
                         ]
                     },
                     {
                         id: 'windranger_prismatic_cape',
                         name: 'Prismatic Cape',
                         recipe: [
-                            { matId: MAT_IDS.Fur, amount: 3 },
+                            { matId: MAT_IDS.Fur, amount: 5 },
                             { matId: MAT_IDS.ZinFur, amount: 3 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
+                            { matId: MAT_IDS.ZinShocker, amount: 4 },
+                            { matId: MAT_IDS.Gunpowder, amount: 3 },
+                            { matId: MAT_IDS.DevilsBlight, amount: 2 }
                         ]
                     },
                     {
                         id: 'windranger_prismatic_quiver',
                         name: 'Prismatic Quiver',
                         recipe: [
-                            { matId: MAT_IDS.Claw, amount: 3 },
-                            { matId: MAT_IDS.ZinShocker, amount: 3 },
-                            { matId: MAT_IDS.PrismaticPigment, amount: 1 }
+                            { matId: MAT_IDS.Claw, amount: 5 },
+                            { matId: MAT_IDS.ZinCortex, amount: 4 },
+                            { matId: MAT_IDS.LargeBarrel, amount: 3 },
+                            { matId: MAT_IDS.SinisterCloth, amount: 2 }
                         ]
                     }
                 ]

@@ -1,55 +1,38 @@
 export const MAT_IDS = {
-    // General
-    Essence: 'monster_essense',
-    Fur: 'monster_fur',
-    Claw: 'monster_claw',
-    
-    // Odogaron
-    OdoSinew: 'odogaron_sinew',
-    OdoFang: 'odogaron_hardfang',
-    OdoScale: 'odogaron_scale',
-    OdoShard: 'odogaron_shard',
-    OdoMantle: 'odogaron_mantle',
-    
-    // Zinogre
-    ZinFur: 'zinogre_electrofur',
-    ZinShocker: 'zinogre_deathly_shocker',
-    ZinCortex: 'zinogre_cortex',
-    ZinHorn: 'zinogre_hardhorn',
-    ZinSky: 'zinogre_skymerald',
-
-    //Rathalos
-    RathCarapache: 'rathalos_carapache',
-    RathWing: 'rathalos_wing',
-    RathTail: 'rathalos_tail',
-    RathRuby: 'rathalos_ruby',
-    RathPlate: 'rathalos_plate',
-
-    //Kirin
-    KirThunderhorn: 'kirin_thunderhorn',
-    KirHide: 'kirin_hide',
-    KirMane: 'kirin_mane',
-    KirAzureHorn: 'kirin_azure_horn',
-
-    // Uncommon (Otros)
-    AncientBone: 'ancient_bone',
-    KestShell: 'kestodon_shell',
-    BullHead: 'bullfango_head',
-    LargeBarrel: 'large_barrel',
-    Gunpowder: 'gunpowder',
-    IronOre: 'iron_ore',
-
-    // Rare (Bosses)
-    ElderDragGem: 'large_elder_dragon_gem',
-    WyvernGem: 'wyvern_gem',
-    WarpedBone: 'warped_bone',
-    SinisterCloth: 'sinister_cloth',
-    DevilsBlight: 'devils_blight',
-
-    // ... Agrega aquí el resto de tus IDs ...
-    
-    // Legendary /
-    PalicoVoucher: 'palico_voucher',
-    PoogieVoucher: 'poogie_voucher',
-    PrismaticPigment: 'prismatic_pigment'
+  MONSTER_ESSENSE: 'monster_essense',
+  MONSTER_FUR: 'monster_fur',
+  MONSTER_CLAW: 'monster_claw',
+  ODOGARON_SINEW: 'odogaron_sinew',
+  ODOGARON_HARDFANG: 'odogaron_hardfang',
+  ODOGARON_SCALE: 'odogaron_scale',
+  ZINOGRE_ELECTROFUR: 'zinogre_electrofur',
+  ZINOGRE_DEATHLY_SHOCKER: 'zinogre_deathly_shocker',
+  ZINOGRE_CORTEX: 'zinogre_cortex',
+  RATHALOS_CARAPACHE: 'rathalos_carapache',
+  RATHALOS_WING: 'rathalos_wing',
+  RATHALOS_TAIL: 'rathalos_tail',
+  KIRIN_THUNDERHORN: 'kirin_thunderhorn',
+  KIRIN_HIDE: 'kirin_hide',
+  KIRIN_MANE: 'kirin_mane',
+  ANCIENT_BONE: 'ancient_bone',
+  KESTODON_SHELL: 'kestodon_shell',
+  BULLFANGO_HEAD: 'bullfango_head',
+  LARGE_BARREL: 'large_barrel',
+  GUNPOWDER: 'gunpowder',
+  IRON_ORE: 'iron_ore',
+  ODOGARON_SHARD: 'odogaron_shard',
+  ODOGARON_MANTLE: 'odogaron_mantle',
+  ZINOGRE_HARDHORN: 'zinogre_hardhorn',
+  ZINOGRE_SKYMERALD: 'zinogre_skymerald',
+  RATHALOS_RUBY: 'rathalos_ruby',
+  RATHALOS_PLATE: 'rathalos_plate',
+  KIRIN_AZURE_HORN: 'kirin_azure_horn',
+  LARGE_ELDER_DRAGON_GEM: 'large_elder_dragon_gem',
+  WYVERN_GEM: 'wyvern_gem',
+  WARPED_BONE: 'warped_bone',
+  SINISTER_CLOTH: 'sinister_cloth',
+  DEVILS_BLIGHT: 'devils_blight',
+  PRISMATIC_PIGMENT: 'prismatic_pigment',
+  PALICO_VOUCHER: 'palico_voucher',
+  POOGIE_VOUCHER: 'poogie_voucher',
 };
