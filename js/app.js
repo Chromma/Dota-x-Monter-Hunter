@@ -3,12 +3,14 @@
 
 const { useState, useEffect, useRef } = React;
 
-// 1. Recuperamos los datos que cargamos en index.html
+// 1. Datos Globales
 const INITIAL_MATERIALS = window.INITIAL_MATERIALS;
 const INITIAL_HEROES = window.INITIAL_HEROES;
 const RARITY_COLORS = window.RARITY_COLORS;
+// Recuperar Traducciones
+const TRANSLATIONS = window.TRANSLATIONS;
 
-// 2. Definimos los ICONOS
+// 2. Iconos
 const Icons = {
     Sword: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/></svg>,
     Pickaxe: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 5.5l4 4"/><path d="M3 21l9-9"/><path d="M13 6L6 13"/><path d="M16.5 3.5l3.5 3.5"/></svg>,
@@ -57,7 +59,7 @@ const RarityBadge = ({ rarity }) => (
     </span>
 );
 
-const PieceCard = ({ piece, materials, isCompleted, onCraft }) => {
+const PieceCard = ({ piece, materials, isCompleted, onCraft, t }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const ingredients = piece.recipe.map(r => {
@@ -94,7 +96,7 @@ const PieceCard = ({ piece, materials, isCompleted, onCraft }) => {
             
             {!isCompleted && (
                 <div className="flex items-center gap-2">
-                    {canCraft && !isOpen && <span className="text-[10px] bg-blue-600 text-white px-1.5 py-0.5 rounded font-bold animate-pulse">LISTO</span>}
+                    {canCraft && !isOpen && <span className="text-[10px] bg-blue-600 text-white px-1.5 py-0.5 rounded font-bold animate-pulse">{t('piece_ready')}</span>}
                     {isOpen ? <ChevronUp className="w-4 h-4 text-slate-500" /> : <ChevronDown className="w-4 h-4 text-slate-500" />}
                 </div>
             )}
@@ -130,7 +132,7 @@ const PieceCard = ({ piece, materials, isCompleted, onCraft }) => {
                         : 'bg-slate-800 text-slate-500 cursor-not-allowed'
                     }`}
                 >
-                    {canCraft ? 'CRAFTEAR PIEZA' : 'FALTAN RECURSOS'}
+                    {canCraft ? t('piece_craft_btn') : t('piece_missing_res')}
                 </button>
             </div>
             )}
@@ -138,7 +140,7 @@ const PieceCard = ({ piece, materials, isCompleted, onCraft }) => {
     );
 };
 
-const ConfigSkinDropdown = ({ skin, sIdx, hero, hIdx, heroes, setHeroes, materials, requestConfirmation }) => {
+const ConfigSkinDropdown = ({ skin, sIdx, hero, hIdx, heroes, setHeroes, materials, requestConfirmation, t }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -148,7 +150,7 @@ const ConfigSkinDropdown = ({ skin, sIdx, hero, hIdx, heroes, setHeroes, materia
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex-1 text-left bg-slate-900/50 p-2 rounded border border-slate-800 flex justify-between items-center hover:bg-slate-900"
                 >
-                <span className="text-emerald-400 text-sm font-bold">Nivel {sIdx + 1}: {skin.name}</span>
+                <span className="text-emerald-400 text-sm font-bold">{t('hero_level')} {sIdx + 1}: {skin.name}</span>
                 {isOpen ? <ChevronUp className="w-4 h-4 text-slate-500" /> : <ChevronDown className="w-4 h-4 text-slate-500" />}
                 </button>
             </div>
@@ -173,7 +175,7 @@ const ConfigSkinDropdown = ({ skin, sIdx, hero, hIdx, heroes, setHeroes, materia
                         <div key={piece.id} className="bg-slate-900/50 p-2 rounded border border-slate-800 relative group">
                             <button 
                             onClick={() => {
-                                requestConfirmation(`¿Eliminar la pieza "${piece.name}"?`, () => {
+                                requestConfirmation(`${t('alert_sure')} "${piece.name}"?`, () => {
                                     const newHeroes = [...heroes];
                                     newHeroes[hIdx].skins[sIdx].pieces.splice(pIdx, 1);
                                     setHeroes(newHeroes);
@@ -233,7 +235,7 @@ const ConfigSkinDropdown = ({ skin, sIdx, hero, hIdx, heroes, setHeroes, materia
                                 }}
                                 className="text-[10px] text-blue-400 hover:underline mt-1"
                             >
-                                + Añadir Material
+                                + {t('config_add_btn')}
                             </button>
                             </div>
                         </div>
@@ -243,14 +245,14 @@ const ConfigSkinDropdown = ({ skin, sIdx, hero, hIdx, heroes, setHeroes, materia
                             const newHeroes = [...heroes];
                             newHeroes[hIdx].skins[sIdx].pieces.push({ 
                             id: `p_${Date.now()}`, 
-                            name: 'Nueva Pieza', 
+                            name: 'New Piece', 
                             recipe: [] 
                             });
                             setHeroes(newHeroes);
                         }}
                         className="w-full py-1.5 border border-dashed border-slate-600 text-slate-400 text-xs rounded hover:bg-slate-800"
                     >
-                        + Añadir Pieza al Set
+                        + {t('config_add_btn')}
                     </button>
                 </div>
                 </div>
@@ -259,7 +261,7 @@ const ConfigSkinDropdown = ({ skin, sIdx, hero, hIdx, heroes, setHeroes, materia
     );
 };
 
-const ConfigHeroDropdown = ({ hero, hIdx, heroes, setHeroes, materials, requestConfirmation }) => {
+const ConfigHeroDropdown = ({ hero, hIdx, heroes, setHeroes, materials, requestConfirmation, t }) => {
     const [isOpen, setIsOpen] = useState(false);
     
     return (
@@ -292,6 +294,7 @@ const ConfigHeroDropdown = ({ hero, hIdx, heroes, setHeroes, materials, requestC
                         setHeroes={setHeroes}
                         materials={materials}
                         requestConfirmation={requestConfirmation}
+                        t={t}
                     />
                 ))}
                 </div>
@@ -300,7 +303,7 @@ const ConfigHeroDropdown = ({ hero, hIdx, heroes, setHeroes, materials, requestC
     );
 };
 
-const MaterialCard = ({ mat, updateStock, setStock, getGlobalMissing }) => {
+const MaterialCard = ({ mat, updateStock, setStock, getGlobalMissing, t }) => {
     const missing = getGlobalMissing(mat.id);
     const isComplete = missing === 0;
 
@@ -350,14 +353,14 @@ const MaterialCard = ({ mat, updateStock, setStock, getGlobalMissing }) => {
             <div className="w-16 text-right">
                 {isComplete ? (
                 <div className="flex flex-col items-end">
-                    <span className="text-[10px] text-slate-500 font-bold tracking-wider">FALTAN</span>
+                    <span className="text-[10px] text-slate-500 font-bold tracking-wider">{t('card_missing_label')}</span>
                     <span className="text-emerald-500 font-bold text-sm flex items-center">
                         OK <Check className="w-3 h-3 ml-1" />
                     </span>
                 </div>
                 ) : (
                 <div className="flex flex-col items-end">
-                    <span className="text-[10px] text-orange-500/70 font-bold tracking-wider">FALTAN</span>
+                    <span className="text-[10px] text-orange-500/70 font-bold tracking-wider">{t('card_missing_label')}</span>
                     <span className="text-orange-500 font-bold text-lg font-mono leading-none">{missing}</span>
                 </div>
                 )}
@@ -371,7 +374,6 @@ function App() {
     const [activeTab, setActiveTab] = useState('inventory'); 
     
     // --- ESTADO ---
-    // IMPORTANTE: Ahora si INITIAL_MATERIALS falla (es undefined), usamos un array vacío para que no explote
     const [materials, setMaterials] = useState(() => {
         const saved = localStorage.getItem('cf_mats_v8_pets');
         return saved ? JSON.parse(saved) : (window.INITIAL_MATERIALS || []);
@@ -395,11 +397,12 @@ function App() {
     const [heroViewMode, setHeroViewMode] = useState(() => localStorage.getItem('cf_view_v8') || 'grid'); 
     const [invSearch, setInvSearch] = useState('');
     const [invSort, setInvSort] = useState('category'); 
-    // ESTADO PARA EL NUEVO FILTRO
     const [showMissingOnly, setShowMissingOnly] = useState(false);
+    
+    // --- I18N STATE ---
+    const [lang, setLang] = useState(() => localStorage.getItem('cf_lang') || 'en');
 
     const fileInputRef = useRef(null);
-
     const [confirmation, setConfirmation] = useState({ isOpen: false, message: '', onConfirm: null });
 
     // --- PERSISTENCIA LOCAL ---
@@ -409,7 +412,14 @@ function App() {
         localStorage.setItem('cf_prog_v8', JSON.stringify(heroProgress));
         localStorage.setItem('cf_pieces_v8', JSON.stringify(completedPieces));
         localStorage.setItem('cf_view_v8', heroViewMode);
-    }, [materials, heroes, heroProgress, completedPieces, heroViewMode]);
+        localStorage.setItem('cf_lang', lang);
+    }, [materials, heroes, heroProgress, completedPieces, heroViewMode, lang]);
+
+    // --- HELPER TRANSLATION ---
+    const t = (key) => {
+        if (!TRANSLATIONS || !TRANSLATIONS[lang]) return key;
+        return TRANSLATIONS[lang][key] || key;
+    };
 
     // --- FUNCIONES DE EXPORTAR/IMPORTAR ---
     const exportData = () => {
@@ -440,7 +450,7 @@ function App() {
         try {
             const data = JSON.parse(e.target.result);
             if (data.materials && data.heroes) {
-            requestConfirmation("Esto sobrescribirá tus datos actuales con los del archivo. ¿Continuar?", () => {
+            requestConfirmation(t('alert_sure'), () => {
                 setMaterials(data.materials);
                 setHeroes(data.heroes);
                 setHeroProgress(data.heroProgress || {});
@@ -448,7 +458,7 @@ function App() {
             });
             }
         } catch (err) {
-            alert("Error al leer el archivo. Asegúrate de que es un JSON válido de Crownfall.");
+            alert("Error");
         }
         };
         reader.readAsText(file);
@@ -506,14 +516,14 @@ function App() {
     // --- ACCIONES DE RESET ---
     const resetInventory = () => {
         requestConfirmation(
-        "¿Estás seguro de que quieres VACIAR todo el inventario? Esta acción no se puede deshacer.",
+        t('msg_reset_inventory'),
         () => setMaterials(prev => prev.map(m => ({ ...m, stock: 0 })))
         );
     };
 
     const resetHeroesProgress = () => {
         requestConfirmation(
-        "¿Reiniciar el nivel de TODOS los héroes al principio?",
+        t('msg_reset_progress'),
         () => {
             setHeroProgress({});
             setCompletedPieces({});
@@ -524,7 +534,7 @@ function App() {
     // Restaurar datos y borrar progreso
     const restoreDefaultData = () => {
         requestConfirmation(
-            "¿Restaurar los datos originales extraídos de los CSV? Perderás cambios en recetas personalizadas.",
+            t('msg_restore_data'),
             () => {
             setMaterials(window.INITIAL_MATERIALS);
             setHeroes(window.INITIAL_HEROES);
@@ -542,7 +552,6 @@ function App() {
 
     // --- NUEVA FUNCIÓN: Permite escribir el número directo ---
     const setStock = (id, value) => {
-        // Convertimos el texto a entero. Si está vacío o es inválido, ponemos 0.
         const newStock = Math.max(0, parseInt(value) || 0);
         setMaterials(prev => prev.map(m => 
             m.id === id ? { ...m, stock: newStock } : m
@@ -588,7 +597,6 @@ function App() {
         m.category.toLowerCase().includes(invSearch.toLowerCase())
         );
 
-        // NUEVO FILTRO: Solo faltantes
         if (showMissingOnly) {
             filtered = filtered.filter(m => getGlobalMissing(m.id) > 0);
         }
@@ -619,8 +627,9 @@ function App() {
                         key={mat.id} 
                         mat={mat} 
                         updateStock={updateStock}
-                        setStock={setStock} // Pasamos la nueva función
+                        setStock={setStock} 
                         getGlobalMissing={getGlobalMissing} 
+                        t={t}
                     />
                 ))}
             </div>
@@ -634,8 +643,9 @@ function App() {
                     key={mat.id} 
                     mat={mat} 
                     updateStock={updateStock}
-                    setStock={setStock} // Pasamos la nueva función
+                    setStock={setStock} 
                     getGlobalMissing={getGlobalMissing} 
+                    t={t}
                 />
                 ))}
             </div>
@@ -650,7 +660,7 @@ function App() {
                 <Search className="absolute left-3 top-2.5 w-4 h-4 text-slate-500" />
                 <input 
                     className="w-full bg-slate-900 border border-slate-700 rounded-lg pl-9 pr-8 py-2 text-sm text-white focus:border-blue-500 outline-none"
-                    placeholder="Buscar recurso..."
+                    placeholder={t('search_placeholder')}
                     value={invSearch}
                     onChange={e => setInvSearch(e.target.value)}
                 />
@@ -665,7 +675,7 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-2">
                 
-                {/* NUEVO CHECKBOX: Faltantes */}
+                {/* CHECKBOX: Faltantes */}
                 <label className="flex items-center space-x-2 cursor-pointer bg-slate-800 px-3 py-1.5 rounded hover:bg-slate-700 transition-colors border border-slate-700">
                     <input 
                         type="checkbox" 
@@ -673,7 +683,7 @@ function App() {
                         onChange={(e) => setShowMissingOnly(e.target.checked)}
                         className="form-checkbox h-4 w-4 text-blue-600 rounded focus:ring-blue-500 bg-slate-900 border-slate-600"
                     />
-                    <span className="text-xs font-bold text-slate-300 uppercase select-none">Faltantes</span>
+                    <span className="text-xs font-bold text-slate-300 uppercase select-none">{t('filter_missing')}</span>
                 </label>
 
                 <div className="h-6 w-px bg-slate-700 mx-2"></div>
@@ -681,7 +691,7 @@ function App() {
                 <button 
                     onClick={resetInventory}
                     className="px-3 py-2 rounded bg-red-900/20 text-red-400 border border-red-900/50 hover:bg-red-900/40 flex items-center transition-colors"
-                    title="Poner todo el stock a 0"
+                    title={t('btn_reset_stock')}
                 >
                     <Trash2 className="w-4 h-4" />
                 </button>
@@ -690,8 +700,8 @@ function App() {
 
                 <Filter className="w-4 h-4 text-slate-500" />
                 {[
-                    { id: 'category', label: 'Categoría' },
-                    { id: 'rarity', label: 'Rareza' },
+                    { id: 'category', label: 'CAT' },
+                    { id: 'rarity', label: 'RAR' },
                     { id: 'alpha', label: 'A-Z' },
                 ].map(opt => (
                     <button
@@ -723,7 +733,7 @@ function App() {
                 className="flex items-center px-4 py-2 bg-red-900/20 text-red-400 border border-red-900/50 rounded-lg text-xs font-bold hover:bg-red-900/40 transition-colors"
                 >
                 <RefreshCw className="w-3.5 h-3.5 mr-2" />
-                REINICIAR PROGRESO
+                {t('btn_reset_progress')}
                 </button>
             </div>
 
@@ -744,14 +754,14 @@ function App() {
                             {hero.id === 'poogie' && <Ghost className="w-5 h-5 text-pink-400"/>}
                         </h3>
                         <div className={`text-sm text-${hero.theme}-400 font-bold flex items-center justify-end gap-2`}>
-                            {isMaxed ? 'COLECCIÓN COMPLETA' : currentSkin.name}
+                            {isMaxed ? t('hero_collection_complete') : currentSkin.name}
                             {!isMaxed && <div className={`w-2 h-2 rounded-full bg-${hero.theme}-500 animate-pulse`}></div>}
                         </div>
                         </div>
 
                         <div className="flex flex-col items-start min-w-[80px]">
                         <div className="text-xs font-mono text-slate-500 mb-1 font-bold">
-                            {hero.isCourier ? 'ESTILO' : 'NIVEL'} {isMaxed ? 'MAX' : `${currentIndex + 1}/${hero.skins.length}`}
+                            {hero.isCourier ? t('hero_style') : t('hero_level')} {isMaxed ? t('hero_max') : `${currentIndex + 1}/${hero.skins.length}`}
                         </div>
                         <div className="w-24 h-1.5 bg-slate-800 rounded-full overflow-hidden">
                             <div className={`h-full bg-${hero.theme}-500`} style={{ width: `${((currentIndex) / hero.skins.length) * 100}%` }}></div>
@@ -763,8 +773,8 @@ function App() {
                         {isMaxed ? (
                         <div className="text-center py-8 text-emerald-500 flex flex-col items-center">
                             <Trophy className="w-16 h-16 mb-2 opacity-50" />
-                            <span className="font-bold text-lg">¡MAESTRO CAZADOR!</span>
-                            <span className="text-sm text-slate-500">Has completado todos los sets.</span>
+                            <span className="font-bold text-lg">{t('hero_master_hunter')}</span>
+                            <span className="text-sm text-slate-500">{t('hero_completed_msg')}</span>
                         </div>
                         ) : (
                         <div className={heroViewMode === 'grid' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 gap-3'}>
@@ -775,6 +785,7 @@ function App() {
                                 materials={materials}
                                 isCompleted={completedPieces[`${hero.id}_${currentSkin.id}_${piece.id}`]}
                                 onCraft={() => craftPiece(hero.id, currentSkin.id, piece)}
+                                t={t}
                             />
                             ))}
                         </div>
@@ -798,8 +809,8 @@ function App() {
             {/* CONFIG GENERAL */}
             <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex justify-between items-center">
                 <div>
-                <h3 className="font-bold text-white text-sm">Vista de Héroes</h3>
-                <p className="text-xs text-slate-400">Elige cómo visualizar tus tarjetas de progreso.</p>
+                <h3 className="font-bold text-white text-sm">{t('config_view_title')}</h3>
+                <p className="text-xs text-slate-400">{t('config_view_desc')}</p>
                 </div>
                 <div className="flex bg-slate-950 p-1 rounded border border-slate-800">
                 <button onClick={() => setHeroViewMode('grid')} className={`p-2 rounded ${heroViewMode === 'grid' ? 'bg-blue-600 text-white' : 'text-slate-500'}`}><LayoutGrid className="w-4 h-4"/></button>
@@ -809,19 +820,19 @@ function App() {
 
             {/* EXPORTAR/IMPORTAR */}
             <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
-                <h3 className="font-bold text-white text-sm mb-4">Copia de Seguridad (Cloud Simulado)</h3>
+                <h3 className="font-bold text-white text-sm mb-4">{t('config_backup_title')}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-slate-950 p-4 rounded border border-slate-800 flex flex-col items-center text-center">
                     <Download className="w-8 h-8 text-blue-500 mb-2" />
-                    <h4 className="font-bold text-slate-200 text-sm">Guardar Progreso</h4>
-                    <p className="text-xs text-slate-500 mb-3">Descarga un archivo con todo tu avance actual.</p>
-                    <button onClick={exportData} className="w-full py-2 bg-blue-600 hover:bg-blue-500 text-white rounded text-xs font-bold">DESCARGAR JSON</button>
+                    <h4 className="font-bold text-slate-200 text-sm">{t('config_save_title')}</h4>
+                    <p className="text-xs text-slate-500 mb-3">{t('config_save_desc')}</p>
+                    <button onClick={exportData} className="w-full py-2 bg-blue-600 hover:bg-blue-500 text-white rounded text-xs font-bold">{t('config_save_btn')}</button>
                 </div>
 
                 <div className="bg-slate-950 p-4 rounded border border-slate-800 flex flex-col items-center text-center">
                     <Upload className="w-8 h-8 text-emerald-500 mb-2" />
-                    <h4 className="font-bold text-slate-200 text-sm">Cargar Progreso</h4>
-                    <p className="text-xs text-slate-500 mb-3">Sube el archivo JSON para restaurar tus datos.</p>
+                    <h4 className="font-bold text-slate-200 text-sm">{t('config_load_title')}</h4>
+                    <p className="text-xs text-slate-500 mb-3">{t('config_load_desc')}</p>
                     <input 
                         type="file" 
                         accept=".json" 
@@ -829,21 +840,21 @@ function App() {
                         onChange={importData}
                         className="hidden"
                     />
-                    <button onClick={() => fileInputRef.current?.click()} className="w-full py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded text-xs font-bold">SUBIR JSON</button>
+                    <button onClick={() => fileInputRef.current?.click()} className="w-full py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded text-xs font-bold">{t('config_load_btn')}</button>
                 </div>
                 </div>
             </div>
 
             <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex justify-between items-center">
                 <div>
-                <h3 className="font-bold text-white text-sm">Restaurar Datos de Fábrica</h3>
-                <p className="text-xs text-slate-400">Recuperar la configuración original extraída de los archivos CSV.</p>
+                <h3 className="font-bold text-white text-sm">{t('config_reset_title')}</h3>
+                <p className="text-xs text-slate-400">{t('config_reset_desc')}</p>
                 </div>
                 <button 
                 onClick={restoreDefaultData}
                 className="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold py-2 px-4 rounded border border-slate-700"
                 >
-                Restaurar Originales
+                {t('config_reset_btn')}
                 </button>
             </div>
 
@@ -852,13 +863,13 @@ function App() {
             <div className="p-4 bg-slate-950 border-b border-slate-800 flex justify-between items-center">
                 <h2 className="text-lg font-bold text-white flex items-center">
                     <Pickaxe className="w-5 h-5 mr-2 text-blue-400" /> 
-                    Gestión de Materiales
+                    {t('config_mats_title')}
                 </h2>
                 <button 
                     onClick={() => setMaterials([...materials, { id: `new_${Date.now()}`, name: 'Nuevo Material', category: 'General', rarity: 'Common', stock: 0 }])}
                     className="text-xs bg-blue-600 hover:bg-blue-500 text-white px-3 py-1.5 rounded font-bold flex items-center"
                 >
-                    <Plus className="w-3 h-3 mr-1" /> Añadir
+                    <Plus className="w-3 h-3 mr-1" /> {t('config_add_btn')}
                 </button>
             </div>
             
@@ -868,7 +879,7 @@ function App() {
                 return (
                     <div key={mat.id} className="p-3 bg-slate-950 rounded-lg border border-slate-800 hover:border-slate-700 transition-colors group relative">
                         <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <button onClick={() => requestConfirmation("¿Eliminar material?", () => setMaterials(materials.filter(m => m.id !== mat.id)))} className="text-red-500 hover:text-red-400"><Trash2 className="w-4 h-4"/></button>
+                            <button onClick={() => requestConfirmation(t('alert_sure'), () => setMaterials(materials.filter(m => m.id !== mat.id)))} className="text-red-500 hover:text-red-400"><Trash2 className="w-4 h-4"/></button>
                         </div>
                         
                         <div className="space-y-3">
@@ -929,7 +940,7 @@ function App() {
             <div className="p-4 bg-slate-950 border-b border-slate-800">
                 <h2 className="text-lg font-bold text-white flex items-center">
                     <Trophy className="w-5 h-5 mr-2 text-yellow-400" /> 
-                    Editor de Sets y Piezas
+                    {t('config_sets_title')}
                 </h2>
             </div>
 
@@ -943,6 +954,7 @@ function App() {
                     setHeroes={setHeroes} 
                     materials={materials} 
                     requestConfirmation={requestConfirmation}
+                    t={t}
                 />
                 ))}
             </div>
@@ -962,30 +974,40 @@ function App() {
                 </div>
                 <div>
                 <h1 className="text-lg font-bold text-white leading-tight tracking-tight hidden md:block">Dota x Monster Hunter</h1>
-                <p className="text-[10px] text-slate-400 uppercase tracking-widest font-semibold hidden md:block">Tracker Global</p>
+                <p className="text-[10px] text-slate-400 uppercase tracking-widest font-semibold hidden md:block">{t('app_subtitle')}</p>
                 </div>
             </div>
             
-            <nav className="flex space-x-1 bg-slate-950 p-1 rounded-lg border border-slate-800">
-                {[
-                { id: 'inventory', icon: Pickaxe, label: 'Inventario' },
-                { id: 'heroes', icon: Trophy, label: 'Héroes' },
-                { id: 'config', icon: Settings, label: 'Config' }
-                ].map(tab => (
-                <button
-                    key={tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={`px-3 py-1.5 rounded-md text-xs font-bold uppercase tracking-wide flex items-center transition-all ${
-                    activeTab === tab.id 
-                        ? 'bg-slate-800 text-white shadow-sm ring-1 ring-slate-700' 
-                        : 'text-slate-500 hover:text-slate-300'
-                    }`}
+            <div className="flex items-center gap-2">
+                {/* BOTON DE IDIOMA */}
+                <button 
+                    onClick={() => setLang(lang === 'es' ? 'en' : 'es')}
+                    className="px-3 py-1.5 rounded-md text-xs font-bold uppercase tracking-wide bg-slate-800 text-slate-400 hover:text-white border border-slate-700 transition-colors"
                 >
-                    <tab.icon className="w-3.5 h-3.5 md:mr-2" />
-                    <span className="hidden md:inline">{tab.label}</span>
+                    {lang === 'es' ? 'ES' : 'EN'}
                 </button>
-                ))}
-            </nav>
+
+                <nav className="flex space-x-1 bg-slate-950 p-1 rounded-lg border border-slate-800">
+                    {[
+                    { id: 'inventory', icon: Pickaxe, label: t('nav_inventory') },
+                    { id: 'heroes', icon: Trophy, label: t('nav_heroes') },
+                    { id: 'config', icon: Settings, label: t('nav_config') }
+                    ].map(tab => (
+                    <button
+                        key={tab.id}
+                        onClick={() => setActiveTab(tab.id)}
+                        className={`px-3 py-1.5 rounded-md text-xs font-bold uppercase tracking-wide flex items-center transition-all ${
+                        activeTab === tab.id 
+                            ? 'bg-slate-800 text-white shadow-sm ring-1 ring-slate-700' 
+                            : 'text-slate-500 hover:text-slate-300'
+                        }`}
+                    >
+                        <tab.icon className="w-3.5 h-3.5 md:mr-2" />
+                        <span className="hidden md:inline">{tab.label}</span>
+                    </button>
+                    ))}
+                </nav>
+            </div>
         </header>
 
         <main className="max-w-7xl mx-auto px-4 pt-4">
@@ -1002,7 +1024,7 @@ function App() {
                 <div className="w-12 h-12 bg-red-900/30 rounded-full flex items-center justify-center mb-4">
                     <AlertTriangle className="w-6 h-6 text-red-500" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">¿Estás seguro?</h3>
+                <h3 className="text-lg font-bold text-white mb-2">{t('alert_sure')}</h3>
                 <p className="text-slate-400 text-sm mb-6">{confirmation.message}</p>
                 
                 <div className="flex gap-3 w-full">
@@ -1010,13 +1032,13 @@ function App() {
                     onClick={handleCancel}
                     className="flex-1 py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-medium transition-colors"
                     >
-                    Cancelar
+                    {t('alert_cancel')}
                     </button>
                     <button 
                     onClick={handleConfirm}
                     className="flex-1 py-2.5 bg-red-600 hover:bg-red-500 text-white rounded-lg font-bold shadow-lg shadow-red-900/20 transition-colors"
                     >
-                    Confirmar
+                    {t('alert_confirm')}
                     </button>
                 </div>
                 </div>
