@@ -1,6 +1,7 @@
-import { MAT_IDS } from './src/data/constants.js';
+// js/heroes.js
+import { MAT_IDS } from './constants.js';
 
-export const heroes = [
+export const INITIAL_HEROES = [
 
     //Courrier: Palico
     {
