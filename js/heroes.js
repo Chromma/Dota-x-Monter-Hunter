@@ -97,7 +97,7 @@ window.INITIAL_HEROES = [
                         recipe: [
                             { matId: window.MAT_IDS.Essence, amount: 15 },
                             { matId: window.MAT_IDS.AncientBone, amount: 3 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 3 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 3 },
                             { matId: window.MAT_IDS.BullHead, amount: 3 },
                             { matId: window.MAT_IDS.WarpedBone, amount: 3 },
                             { matId: window.MAT_IDS.PalicoVoucher, amount: 1 }
@@ -1098,7 +1098,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.RathCarapache, amount: 3 },
                             { matId: window.MAT_IDS.RathWing, amount: 3 },
                             { matId: window.MAT_IDS.RathTail, amount: 3 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 2 }
+                            { matId: window.MAT_IDS.Kestshell, amount: 2 }
                         ]
                     },
                     {
@@ -1108,7 +1108,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.Essence, amount: 3 },
                             { matId: window.MAT_IDS.Claw, amount: 3 },
                             { matId: window.MAT_IDS.RathCarapache, amount: 3 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 2 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 2 },
                             { matId: window.MAT_IDS.RathPlate, amount: 2 }
                         ]
                     },
@@ -1168,7 +1168,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.RathCarapache, amount: 4 },
                             { matId: window.MAT_IDS.RathWing, amount: 4 },
                             { matId: window.MAT_IDS.RathTail, amount: 4 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 4 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 4 },
                             { matId: window.MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
                     },
@@ -1179,7 +1179,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.Essence, amount: 5 },
                             { matId: window.MAT_IDS.Claw, amount: 5 },
                             { matId: window.MAT_IDS.RathCarapache, amount: 4 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 4 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 4 },
                             { matId: window.MAT_IDS.RathPlate, amount: 2 }
                         ]
                     },
@@ -1244,7 +1244,7 @@ window.INITIAL_HEROES = [
                         recipe: [
                             { matId: window.MAT_IDS.Essence, amount: 6 },
                             { matId: window.MAT_IDS.AncientBone, amount: 4 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 4 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 4 },
                             { matId: window.MAT_IDS.BullHead, amount: 5 },
                             { matId: window.MAT_IDS.WyvernGem, amount: 2 }
                         ]
@@ -1255,7 +1255,7 @@ window.INITIAL_HEROES = [
                         recipe: [
                             { matId: window.MAT_IDS.Claw, amount: 5 },
                             { matId: window.MAT_IDS.AncientBone, amount: 3 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 5 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 5 },
                             { matId: window.MAT_IDS.BullHead, amount: 3 },
                             { matId: window.MAT_IDS.WarpedBone, amount: 2 }
                         ]
@@ -1266,7 +1266,7 @@ window.INITIAL_HEROES = [
                         recipe: [
                             { matId: window.MAT_IDS.Essence, amount: 5 },
                             { matId: window.MAT_IDS.AncientBone, amount: 5 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 3 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 3 },
                             { matId: window.MAT_IDS.BullHead, amount: 3 }
                         ]
                     },
@@ -1303,7 +1303,7 @@ window.INITIAL_HEROES = [
                         recipe: [
                             { matId: window.MAT_IDS.Essence, amount: 3 },
                             { matId: window.MAT_IDS.Claw, amount: 3 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 3 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 3 },
                             { matId: window.MAT_IDS.BullHead, amount: 3 }
                         ]
                     },
@@ -1314,7 +1314,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.Essence, amount: 3 },
                             { matId: window.MAT_IDS.Claw, amount: 3 },
                             { matId: window.MAT_IDS.AncientBone, amount: 3 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 3 }
+                            { matId: window.MAT_IDS.Kestshell, amount: 3 }
                         ]
                     },
                     {
@@ -1359,7 +1359,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.Essence, amount: 4 },
                             { matId: window.MAT_IDS.OdoScale, amount: 2 },
                             { matId: window.MAT_IDS.AncientBone, amount: 3 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 3 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 3 },
                             { matId: window.MAT_IDS.BullHead, amount: 5 }
                         ]
                     },
@@ -1370,7 +1370,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.Claw, amount: 4 },
                             { matId: window.MAT_IDS.OdoSinew, amount: 2 },
                             { matId: window.MAT_IDS.AncientBone, amount: 3 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 5 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 5 },
                             { matId: window.MAT_IDS.BullHead, amount: 3 }
                         ]
                     },
@@ -1381,7 +1381,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.Essence, amount: 4 },
                             { matId: window.MAT_IDS.OdoFang, amount: 2 },
                             { matId: window.MAT_IDS.AncientBone, amount: 5 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 3 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 3 },
                             { matId: window.MAT_IDS.BullHead, amount: 3 }
                         ]
                     },
@@ -1421,7 +1421,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.Essence, amount: 5 },
                             { matId: window.MAT_IDS.OdoScale, amount: 4 },
                             { matId: window.MAT_IDS.AncientBone, amount: 4 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 4 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 4 },
                             { matId: window.MAT_IDS.BullHead, amount: 6 },
                             { matId: window.MAT_IDS.PrismaticPigment, amount: 1 }
                         ]
@@ -1433,7 +1433,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.Claw, amount: 5 },
                             { matId: window.MAT_IDS.OdoSinew, amount: 4 },
                             { matId: window.MAT_IDS.AncientBone, amount: 4 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 6 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 6 },
                             { matId: window.MAT_IDS.BullHead, amount: 4 },
                             { matId: window.MAT_IDS.OdoShard, amount: 2 }
                         ]
@@ -1445,7 +1445,7 @@ window.INITIAL_HEROES = [
                             { matId: window.MAT_IDS.Essence, amount: 5 },
                             { matId: window.MAT_IDS.OdoFang, amount: 4 },
                             { matId: window.MAT_IDS.AncientBone, amount: 6 },
-                            { matid: window.MAT_IDS.Kestshell, amount: 4 },
+                            { matId: window.MAT_IDS.Kestshell, amount: 4 },
                             { matId: window.MAT_IDS.BullHead, amount: 4 },
                             { matId: window.MAT_IDS.WarpedBone, amount: 1 }
                         ]

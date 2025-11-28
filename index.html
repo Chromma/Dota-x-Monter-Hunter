@@ -13,9 +13,9 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <style>
-        /* Forzar el color de fondo oscuro inmediatamente */
+        /* Fondo base */
         html, body {
-            background-color: #020617 !important; /* Azul petróleo oscuro */
+            background-color: #020617 !important;
             margin: 0;
             padding: 0;
             min-height: 100vh;
@@ -24,6 +24,20 @@
         ::-webkit-scrollbar-track { background: #0f172a; }
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+        /* --- TRUCO PARA OCULTAR FLECHAS DE NUMEROS (SPINNERS) --- */
+        
+        /* Chrome, Safari, Edge, Opera */
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
     </style>
 </head>
 <body>

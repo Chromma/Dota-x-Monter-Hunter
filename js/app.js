@@ -1,19 +1,14 @@
 // js/app.js
-// --- SIN IMPORTS: Todo viene de las variables globales cargadas en index.html ---
+// SIN IMPORTS.
 
 const { useState, useEffect, useRef } = React;
 
 // 1. Recuperamos los datos que cargamos en index.html
-// Usamos "window." porque así los guardamos en los otros archivos
 const INITIAL_MATERIALS = window.INITIAL_MATERIALS;
 const INITIAL_HEROES = window.INITIAL_HEROES;
 const RARITY_COLORS = window.RARITY_COLORS;
 
-// Si alguna variable no cargó, esto nos avisará en la consola
-if (!INITIAL_MATERIALS) console.error("Error: INITIAL_MATERIALS no se cargó. Revisa materials.js");
-if (!INITIAL_HEROES) console.error("Error: INITIAL_HEROES no se cargó. Revisa heroes.js");
-
-// 2. Definimos los ICONOS aquí mismo (para evitar problemas de JSX externos)
+// 2. Definimos los ICONOS
 const Icons = {
     Sword: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/></svg>,
     Pickaxe: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 5.5l4 4"/><path d="M3 21l9-9"/><path d="M13 6L6 13"/><path d="M16.5 3.5l3.5 3.5"/></svg>,
@@ -305,7 +300,7 @@ const ConfigHeroDropdown = ({ hero, hIdx, heroes, setHeroes, materials, requestC
     );
 };
 
-const MaterialCard = ({ mat, updateStock, getGlobalMissing }) => {
+const MaterialCard = ({ mat, updateStock, setStock, getGlobalMissing }) => {
     const missing = getGlobalMissing(mat.id);
     const isComplete = missing === 0;
 
@@ -324,9 +319,32 @@ const MaterialCard = ({ mat, updateStock, getGlobalMissing }) => {
         
         <div className="flex items-center gap-4">
             <div className="flex items-center bg-slate-950 rounded-lg border border-slate-800">
-            <button onClick={() => updateStock(mat.id, -1)} className="px-3 py-1 text-slate-400 hover:bg-slate-800 rounded-l">-</button>
-            <span className="w-10 text-center font-mono text-white font-bold">{mat.stock}</span>
-            <button onClick={() => updateStock(mat.id, 1)} className="px-3 py-1 text-blue-400 hover:bg-blue-900/30 rounded-r">+</button>
+            {/* Botón Restar */}
+            <button onClick={() => updateStock(mat.id, -1)} className="px-3 py-1 text-slate-400 hover:bg-slate-800 hover:text-white rounded-l transition-colors">-</button>
+            
+            {/* INPUT NUMÉRICO MEJORADO (CON ONKEYDOWN AGRESIVO) */}
+            <input 
+                type="number"
+                className="w-16 text-center font-mono text-white font-bold bg-transparent outline-none border-none appearance-none"
+                value={mat.stock > 0 ? mat.stock : ''} 
+                placeholder="0"
+                onChange={(e) => setStock(mat.id, e.target.value)}
+                onFocus={(e) => e.target.select()}
+                
+                // --- BLOQUEO TOTAL DE TECLAS NO NUMÉRICAS ---
+                onKeyDown={(e) => {
+                    // Permitir: borrar, tab, flechas, inicio, fin, enter
+                    if (['Backspace', 'Delete', 'Tab', 'ArrowLeft', 'ArrowRight', 'Home', 'End', 'Enter'].includes(e.key)) return;
+                    
+                    // Bloquear todo lo que no sea número
+                    if (!/[0-9]/.test(e.key)) {
+                        e.preventDefault();
+                    }
+                }}
+            />
+            
+            {/* Botón Sumar */}
+            <button onClick={() => updateStock(mat.id, 1)} className="px-3 py-1 text-blue-400 hover:bg-blue-900/30 rounded-r transition-colors">+</button>
             </div>
 
             <div className="w-16 text-right">
@@ -353,14 +371,15 @@ function App() {
     const [activeTab, setActiveTab] = useState('inventory'); 
     
     // --- ESTADO ---
+    // IMPORTANTE: Ahora si INITIAL_MATERIALS falla (es undefined), usamos un array vacío para que no explote
     const [materials, setMaterials] = useState(() => {
         const saved = localStorage.getItem('cf_mats_v8_pets');
-        return saved ? JSON.parse(saved) : INITIAL_MATERIALS;
+        return saved ? JSON.parse(saved) : (window.INITIAL_MATERIALS || []);
     });
 
     const [heroes, setHeroes] = useState(() => {
         const saved = localStorage.getItem('cf_heroes_v8_pets');
-        return saved ? JSON.parse(saved) : INITIAL_HEROES;
+        return saved ? JSON.parse(saved) : (window.INITIAL_HEROES || []);
     });
     
     const [heroProgress, setHeroProgress] = useState(() => {
@@ -376,6 +395,9 @@ function App() {
     const [heroViewMode, setHeroViewMode] = useState(() => localStorage.getItem('cf_view_v8') || 'grid'); 
     const [invSearch, setInvSearch] = useState('');
     const [invSort, setInvSort] = useState('category'); 
+    // ESTADO PARA EL NUEVO FILTRO
+    const [showMissingOnly, setShowMissingOnly] = useState(false);
+
     const fileInputRef = useRef(null);
 
     const [confirmation, setConfirmation] = useState({ isOpen: false, message: '', onConfirm: null });
@@ -499,12 +521,15 @@ function App() {
         );
     };
     
+    // Restaurar datos y borrar progreso
     const restoreDefaultData = () => {
         requestConfirmation(
             "¿Restaurar los datos originales extraídos de los CSV? Perderás cambios en recetas personalizadas.",
             () => {
-            setMaterials(INITIAL_MATERIALS);
-            setHeroes(INITIAL_HEROES);
+            setMaterials(window.INITIAL_MATERIALS);
+            setHeroes(window.INITIAL_HEROES);
+            setHeroProgress({});
+            setCompletedPieces({});
             }
         );
     }
@@ -512,6 +537,15 @@ function App() {
     const updateStock = (id, delta) => {
         setMaterials(prev => prev.map(m => 
         m.id === id ? { ...m, stock: Math.max(0, m.stock + delta) } : m
+        ));
+    };
+
+    // --- NUEVA FUNCIÓN: Permite escribir el número directo ---
+    const setStock = (id, value) => {
+        // Convertimos el texto a entero. Si está vacío o es inválido, ponemos 0.
+        const newStock = Math.max(0, parseInt(value) || 0);
+        setMaterials(prev => prev.map(m => 
+            m.id === id ? { ...m, stock: newStock } : m
         ));
     };
 
@@ -554,6 +588,11 @@ function App() {
         m.category.toLowerCase().includes(invSearch.toLowerCase())
         );
 
+        // NUEVO FILTRO: Solo faltantes
+        if (showMissingOnly) {
+            filtered = filtered.filter(m => getGlobalMissing(m.id) > 0);
+        }
+
         if (invSort === 'alpha') {
         filtered.sort((a, b) => a.name.localeCompare(b.name));
         }
@@ -579,7 +618,8 @@ function App() {
                     <MaterialCard 
                         key={mat.id} 
                         mat={mat} 
-                        updateStock={updateStock} 
+                        updateStock={updateStock}
+                        setStock={setStock} // Pasamos la nueva función
                         getGlobalMissing={getGlobalMissing} 
                     />
                 ))}
@@ -593,7 +633,8 @@ function App() {
                 <MaterialCard 
                     key={mat.id} 
                     mat={mat} 
-                    updateStock={updateStock} 
+                    updateStock={updateStock}
+                    setStock={setStock} // Pasamos la nueva función
                     getGlobalMissing={getGlobalMissing} 
                 />
                 ))}
@@ -623,6 +664,20 @@ function App() {
                 )}
                 </div>
                 <div className="flex items-center space-x-2">
+                
+                {/* NUEVO CHECKBOX: Faltantes */}
+                <label className="flex items-center space-x-2 cursor-pointer bg-slate-800 px-3 py-1.5 rounded hover:bg-slate-700 transition-colors border border-slate-700">
+                    <input 
+                        type="checkbox" 
+                        checked={showMissingOnly}
+                        onChange={(e) => setShowMissingOnly(e.target.checked)}
+                        className="form-checkbox h-4 w-4 text-blue-600 rounded focus:ring-blue-500 bg-slate-900 border-slate-600"
+                    />
+                    <span className="text-xs font-bold text-slate-300 uppercase select-none">Faltantes</span>
+                </label>
+
+                <div className="h-6 w-px bg-slate-700 mx-2"></div>
+
                 <button 
                     onClick={resetInventory}
                     className="px-3 py-2 rounded bg-red-900/20 text-red-400 border border-red-900/50 hover:bg-red-900/40 flex items-center transition-colors"
