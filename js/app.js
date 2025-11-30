@@ -3,14 +3,13 @@
 
 const { useState, useEffect, useRef } = React;
 
-// 1. Datos Globales
+// 1. Recuperamos los datos que cargamos en index.html
 const INITIAL_MATERIALS = window.INITIAL_MATERIALS;
 const INITIAL_HEROES = window.INITIAL_HEROES;
 const RARITY_COLORS = window.RARITY_COLORS;
-// Recuperar Traducciones
 const TRANSLATIONS = window.TRANSLATIONS;
 
-// 2. Iconos
+// 2. Definimos los ICONOS
 const Icons = {
     Sword: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/></svg>,
     Pickaxe: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 5.5l4 4"/><path d="M3 21l9-9"/><path d="M13 6L6 13"/><path d="M16.5 3.5l3.5 3.5"/></svg>,
@@ -400,7 +399,7 @@ function App() {
     const [showMissingOnly, setShowMissingOnly] = useState(false);
     
     // --- I18N STATE ---
-    const [lang, setLang] = useState(() => localStorage.getItem('cf_lang') || 'en');
+    const [lang, setLang] = useState(() => localStorage.getItem('cf_lang') || 'en'); // Default english
 
     const fileInputRef = useRef(null);
     const [confirmation, setConfirmation] = useState({ isOpen: false, message: '', onConfirm: null });
@@ -556,6 +555,31 @@ function App() {
         setMaterials(prev => prev.map(m => 
             m.id === id ? { ...m, stock: newStock } : m
         ));
+    };
+
+    // --- NUEVA FUNCIÓN: Completar SKIN entero ---
+    const completeWholeSkin = (heroId, skinId) => {
+        const hero = heroes.find(h => h.id === heroId);
+        const skin = hero.skins.find(s => s.id === skinId);
+        
+        requestConfirmation(t('msg_complete_set'), () => {
+            const newCompleted = { ...completedPieces };
+            
+            // Marcar todas las piezas como hechas
+            skin.pieces.forEach(p => {
+                newCompleted[`${heroId}_${skinId}_${p.id}`] = true;
+            });
+            
+            setCompletedPieces(newCompleted);
+            
+            // Avanzar nivel (si no es el último)
+            setTimeout(() => {
+                setHeroProgress(prev => ({
+                    ...prev,
+                    [heroId]: (prev[heroId] || 0) + 1
+                }));
+            }, 300);
+        });
     };
 
     const craftPiece = (heroId, skinId, piece) => {
@@ -777,17 +801,28 @@ function App() {
                             <span className="text-sm text-slate-500">{t('hero_completed_msg')}</span>
                         </div>
                         ) : (
-                        <div className={heroViewMode === 'grid' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 gap-3'}>
-                            {currentSkin.pieces.map(piece => (
-                            <PieceCard 
-                                key={piece.id}
-                                piece={piece}
-                                materials={materials}
-                                isCompleted={completedPieces[`${hero.id}_${currentSkin.id}_${piece.id}`]}
-                                onCraft={() => craftPiece(hero.id, currentSkin.id, piece)}
-                                t={t}
-                            />
-                            ))}
+                        <div>
+                            {/* BOTON COMPLETAR SET ENTERO */}
+                            <button 
+                                onClick={() => completeWholeSkin(hero.id, currentSkin.id)}
+                                className="w-full mb-4 py-2 bg-blue-900/30 border border-blue-500/30 text-blue-400 hover:bg-blue-900/50 hover:border-blue-500 rounded text-xs font-bold uppercase tracking-wide transition-all flex items-center justify-center gap-2"
+                            >
+                                <CheckCircle2 className="w-4 h-4" />
+                                {t('hero_complete_set_btn')}
+                            </button>
+
+                            <div className={heroViewMode === 'grid' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 gap-3'}>
+                                {currentSkin.pieces.map(piece => (
+                                <PieceCard 
+                                    key={piece.id}
+                                    piece={piece}
+                                    materials={materials}
+                                    isCompleted={completedPieces[`${hero.id}_${currentSkin.id}_${piece.id}`]}
+                                    onCraft={() => craftPiece(hero.id, currentSkin.id, piece)}
+                                    t={t}
+                                />
+                                ))}
+                            </div>
                         </div>
                         )}
                     </div>
