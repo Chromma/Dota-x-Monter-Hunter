@@ -5,16 +5,12 @@ window.TRANSLATIONS = {
         nav_inventory: "Inventario",
         nav_heroes: "Héroes",
         nav_config: "Configuración",
-        
-        // Cabecera
         app_subtitle: "Tracker Global",
         
         // Inventario
         search_placeholder: "Buscar recurso...",
         filter_missing: "Solo Faltantes",
         btn_reset_stock: "Vaciar Stock",
-        
-        // Tarjetas de Materiales
         card_missing_label: "FALTAN",
         
         // Héroes
@@ -24,14 +20,14 @@ window.TRANSLATIONS = {
         hero_collection_complete: "COLECCIÓN COMPLETA",
         hero_master_hunter: "¡MAESTRO CAZADOR!",
         hero_completed_msg: "Has completado todos los sets.",
-        btn_reset_progress: "REINICIAR PROGRESO",
         hero_complete_set_btn: "MARCAR SET COMPLETADO",
-        msg_complete_set: "¿Marcar todo este set como obtenido? Esto eliminará sus requisitos de la lista de faltantes.",
+        btn_reset_progress: "REINICIAR PROGRESO",
         
-        // Piezas
+        // Piezas y Acciones
         piece_ready: "LISTO",
         piece_craft_btn: "CRAFTEAR PIEZA",
         piece_missing_res: "FALTAN RECURSOS",
+        btn_skip_piece: "Saltar", // Nuevo texto
         
         // Configuración
         config_view_title: "Vista de Héroes",
@@ -50,29 +46,27 @@ window.TRANSLATIONS = {
         config_sets_title: "Editor de Sets y Piezas",
         config_add_btn: "Añadir",
         
-        // Alertas / Confirmaciones
+        // Alertas
         alert_sure: "¿Estás seguro?",
         alert_cancel: "Cancelar",
         alert_confirm: "Confirmar",
         msg_reset_inventory: "¿Estás seguro de que quieres VACIAR todo el inventario? Esta acción no se puede deshacer.",
         msg_reset_progress: "¿Reiniciar el nivel de TODOS los héroes al principio?",
-        msg_restore_data: "¿Restaurar los datos originales? Perderás cambios en recetas personalizadas."
+        msg_restore_data: "¿Restaurar los datos originales? Perderás cambios en recetas personalizadas.",
+        msg_complete_set: "¿Marcar todo este set como obtenido? Esto eliminará sus requisitos de la lista de faltantes.",
+        msg_skip_piece: "¿Marcar esta pieza como obtenida SIN gastar materiales?" // Nuevo mensaje
     },
     en: {
         // Navigation
         nav_inventory: "Inventory",
         nav_heroes: "Heroes",
         nav_config: "Settings",
-        
-        // Header
         app_subtitle: "Global Tracker",
         
         // Inventory
         search_placeholder: "Search resource...",
         filter_missing: "Missing Only",
         btn_reset_stock: "Clear Stock",
-        
-        // Material Cards
         card_missing_label: "MISSING",
         
         // Heroes
@@ -82,14 +76,14 @@ window.TRANSLATIONS = {
         hero_collection_complete: "COLLECTION COMPLETE",
         hero_master_hunter: "MASTER HUNTER!",
         hero_completed_msg: "You have completed all sets.",
-        btn_reset_progress: "RESET PROGRESS",
         hero_complete_set_btn: "MARK SET AS COMPLETED",
-        msg_complete_set: "Mark this whole set as owned? This will remove its requirements from the missing list.",
+        btn_reset_progress: "RESET PROGRESS",
         
         // Pieces
         piece_ready: "READY",
         piece_craft_btn: "CRAFT PIECE",
         piece_missing_res: "MISSING RESOURCES",
+        btn_skip_piece: "Skip", // New text
         
         // Config
         config_view_title: "Heroes View",
@@ -114,6 +108,8 @@ window.TRANSLATIONS = {
         alert_confirm: "Confirm",
         msg_reset_inventory: "Are you sure you want to EMPTY the entire inventory? This cannot be undone.",
         msg_reset_progress: "Reset ALL heroes progress to the beginning?",
-        msg_restore_data: "Restore original data? You will lose changes to custom recipes."
+        msg_restore_data: "Restore original data? You will lose changes to custom recipes.",
+        msg_complete_set: "Mark this whole set as owned? This will remove its requirements from the missing list.",
+        msg_skip_piece: "Mark this piece as owned WITHOUT using materials?" // New message
     }
 };

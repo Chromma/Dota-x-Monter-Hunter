@@ -39,7 +39,9 @@ const Icons = {
     Download: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>,
     Upload: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>,
     Cat: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5c2.97 0 5.43 1.46 6.95 3.77a1.99 1.99 0 0 1 .87 2.62l-.21.43a1 1 0 0 0 .49 1.31l1.21.5a1 1 0 0 1 .55 1.36L20.8 18c-.63 1.69-2.33 2.77-4.13 2.63l-3.21-.27a3.99 3.99 0 0 1-1.92-.61L9 18"/><path d="M14 18h-2a2 2 0 0 1-2-2v-1"/><path d="m9 13-1.5-2L9 9"/><path d="M16 13l1.5-2L16 9"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M12 5V3"/><path d="M5.5 5.5 7 7"/><path d="M18.5 5.5 17 7"/></svg>,
-    Ghost: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z"/></svg>
+    Ghost: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z"/></svg>,
+    // --- NUEVO ICONO DE SKIP ---
+    FastForward: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 19 22 12 13 5 13 19" /><polygon points="2 19 11 12 2 5 2 19" /></svg>
 };
 
 const { 
@@ -47,7 +49,7 @@ const {
     Search, Check, CheckCircle2, ArrowRight, Unlock, Filter, 
     ChevronDown, ChevronUp, Hammer, AlertCircle, LayoutGrid, List,
     Edit3, Box, Eye, RefreshCw, AlertTriangle, Download, Upload,
-    Cat, Ghost 
+    Cat, Ghost, FastForward
 } = Icons;
 
 // --- COMPONENTES UI AUXILIARES ---
@@ -58,7 +60,7 @@ const RarityBadge = ({ rarity }) => (
     </span>
 );
 
-const PieceCard = ({ piece, materials, isCompleted, onCraft, t }) => {
+const PieceCard = ({ piece, materials, isCompleted, onCraft, onSkip, t }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const ingredients = piece.recipe.map(r => {
@@ -78,7 +80,7 @@ const PieceCard = ({ piece, materials, isCompleted, onCraft, t }) => {
         }`}>
             <button 
             onClick={() => !isCompleted && setIsOpen(!isOpen)}
-            className="w-full p-3 flex items-center justify-between"
+            className="w-full p-3 flex items-center justify-between group"
             >
             <div className="flex items-center gap-3">
                 <div className={`w-6 h-6 rounded flex items-center justify-center border transition-colors ${
@@ -95,6 +97,18 @@ const PieceCard = ({ piece, materials, isCompleted, onCraft, t }) => {
             
             {!isCompleted && (
                 <div className="flex items-center gap-2">
+                    {/* --- NUEVO BOTÓN DE SALTAR (SKIP) --- */}
+                    <div 
+                        onClick={(e) => {
+                            e.stopPropagation(); // Evita que se abra el acordeón
+                            onSkip();
+                        }}
+                        className="p-1.5 rounded-md hover:bg-slate-800 text-slate-500 hover:text-blue-400 transition-colors mr-1"
+                        title={t('btn_skip_piece')}
+                    >
+                        <FastForward className="w-4 h-4" />
+                    </div>
+
                     {canCraft && !isOpen && <span className="text-[10px] bg-blue-600 text-white px-1.5 py-0.5 rounded font-bold animate-pulse">{t('piece_ready')}</span>}
                     {isOpen ? <ChevronUp className="w-4 h-4 text-slate-500" /> : <ChevronDown className="w-4 h-4 text-slate-500" />}
                 </div>
@@ -324,7 +338,7 @@ const MaterialCard = ({ mat, updateStock, setStock, getGlobalMissing, t }) => {
             {/* Botón Restar */}
             <button onClick={() => updateStock(mat.id, -1)} className="px-3 py-1 text-slate-400 hover:bg-slate-800 hover:text-white rounded-l transition-colors">-</button>
             
-            {/* INPUT NUMÉRICO MEJORADO (CON ONKEYDOWN AGRESIVO) */}
+            {/* INPUT NUMÉRICO MEJORADO */}
             <input 
                 type="number"
                 className="w-16 text-center font-mono text-white font-bold bg-transparent outline-none border-none appearance-none"
@@ -332,13 +346,8 @@ const MaterialCard = ({ mat, updateStock, setStock, getGlobalMissing, t }) => {
                 placeholder="0"
                 onChange={(e) => setStock(mat.id, e.target.value)}
                 onFocus={(e) => e.target.select()}
-                
-                // --- BLOQUEO TOTAL DE TECLAS NO NUMÉRICAS ---
                 onKeyDown={(e) => {
-                    // Permitir: borrar, tab, flechas, inicio, fin, enter
                     if (['Backspace', 'Delete', 'Tab', 'ArrowLeft', 'ArrowRight', 'Home', 'End', 'Enter'].includes(e.key)) return;
-                    
-                    // Bloquear todo lo que no sea número
                     if (!/[0-9]/.test(e.key)) {
                         e.preventDefault();
                     }
@@ -399,7 +408,7 @@ function App() {
     const [showMissingOnly, setShowMissingOnly] = useState(false);
     
     // --- I18N STATE ---
-    const [lang, setLang] = useState(() => localStorage.getItem('cf_lang') || 'en'); // Default english
+    const [lang, setLang] = useState(() => localStorage.getItem('cf_lang') || 'en'); 
 
     const fileInputRef = useRef(null);
     const [confirmation, setConfirmation] = useState({ isOpen: false, message: '', onConfirm: null });
@@ -549,7 +558,6 @@ function App() {
         ));
     };
 
-    // --- NUEVA FUNCIÓN: Permite escribir el número directo ---
     const setStock = (id, value) => {
         const newStock = Math.max(0, parseInt(value) || 0);
         setMaterials(prev => prev.map(m => 
@@ -557,28 +565,50 @@ function App() {
         ));
     };
 
-    // --- NUEVA FUNCIÓN: Completar SKIN entero ---
     const completeWholeSkin = (heroId, skinId) => {
         const hero = heroes.find(h => h.id === heroId);
         const skin = hero.skins.find(s => s.id === skinId);
         
         requestConfirmation(t('msg_complete_set'), () => {
             const newCompleted = { ...completedPieces };
-            
-            // Marcar todas las piezas como hechas
             skin.pieces.forEach(p => {
                 newCompleted[`${heroId}_${skinId}_${p.id}`] = true;
             });
-            
             setCompletedPieces(newCompleted);
-            
-            // Avanzar nivel (si no es el último)
             setTimeout(() => {
                 setHeroProgress(prev => ({
                     ...prev,
                     [heroId]: (prev[heroId] || 0) + 1
                 }));
             }, 300);
+        });
+    };
+
+    // --- NUEVA FUNCIÓN: SALTAR PIEZA INDIVIDUAL ---
+    const skipPiece = (heroId, skinId, piece) => {
+        requestConfirmation(t('msg_skip_piece'), () => {
+            // 1. Marcar como completada sin restar materiales
+            const pieceKey = `${heroId}_${skinId}_${piece.id}`;
+            const newCompleted = { ...completedPieces, [pieceKey]: true };
+            setCompletedPieces(newCompleted);
+
+            // 2. Verificar si se completó el set (nivel)
+            const hero = heroes.find(h => h.id === heroId);
+            const skin = hero.skins.find(s => s.id === skinId);
+            
+            const allDone = skin.pieces.every(p => {
+                const k = `${heroId}_${skinId}_${p.id}`;
+                return newCompleted[k]; 
+            });
+
+            if (allDone) {
+                setTimeout(() => {
+                    setHeroProgress(prev => ({
+                        ...prev,
+                        [heroId]: (prev[heroId] || 0) + 1
+                    }));
+                }, 500);
+            }
         });
     };
 
@@ -699,7 +729,6 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-2">
                 
-                {/* CHECKBOX: Faltantes */}
                 <label className="flex items-center space-x-2 cursor-pointer bg-slate-800 px-3 py-1.5 rounded hover:bg-slate-700 transition-colors border border-slate-700">
                     <input 
                         type="checkbox" 
@@ -802,7 +831,6 @@ function App() {
                         </div>
                         ) : (
                         <div>
-                            {/* BOTON COMPLETAR SET ENTERO */}
                             <button 
                                 onClick={() => completeWholeSkin(hero.id, currentSkin.id)}
                                 className="w-full mb-4 py-2 bg-blue-900/30 border border-blue-500/30 text-blue-400 hover:bg-blue-900/50 hover:border-blue-500 rounded text-xs font-bold uppercase tracking-wide transition-all flex items-center justify-center gap-2"
@@ -819,6 +847,7 @@ function App() {
                                     materials={materials}
                                     isCompleted={completedPieces[`${hero.id}_${currentSkin.id}_${piece.id}`]}
                                     onCraft={() => craftPiece(hero.id, currentSkin.id, piece)}
+                                    onSkip={() => skipPiece(hero.id, currentSkin.id, piece)}
                                     t={t}
                                 />
                                 ))}
