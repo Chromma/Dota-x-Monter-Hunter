@@ -25,6 +25,8 @@ window.TRANSLATIONS = {
         hero_master_hunter: "¡MAESTRO CAZADOR!",
         hero_completed_msg: "Has completado todos los sets.",
         btn_reset_progress: "REINICIAR PROGRESO",
+        hero_complete_set_btn: "MARCAR SET COMPLETADO",
+        msg_complete_set: "¿Marcar todo este set como obtenido? Esto eliminará sus requisitos de la lista de faltantes.",
         
         // Piezas
         piece_ready: "LISTO",
@@ -81,6 +83,8 @@ window.TRANSLATIONS = {
         hero_master_hunter: "MASTER HUNTER!",
         hero_completed_msg: "You have completed all sets.",
         btn_reset_progress: "RESET PROGRESS",
+        hero_complete_set_btn: "MARK SET AS COMPLETED",
+        msg_complete_set: "Mark this whole set as owned? This will remove its requirements from the missing list.",
         
         // Pieces
         piece_ready: "READY",
