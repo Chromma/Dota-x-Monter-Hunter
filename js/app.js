@@ -40,8 +40,8 @@ const Icons = {
     Upload: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>,
     Cat: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5c2.97 0 5.43 1.46 6.95 3.77a1.99 1.99 0 0 1 .87 2.62l-.21.43a1 1 0 0 0 .49 1.31l1.21.5a1 1 0 0 1 .55 1.36L20.8 18c-.63 1.69-2.33 2.77-4.13 2.63l-3.21-.27a3.99 3.99 0 0 1-1.92-.61L9 18"/><path d="M14 18h-2a2 2 0 0 1-2-2v-1"/><path d="m9 13-1.5-2L9 9"/><path d="M16 13l1.5-2L16 9"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M12 5V3"/><path d="M5.5 5.5 7 7"/><path d="M18.5 5.5 17 7"/></svg>,
     Ghost: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z"/></svg>,
-    // --- NUEVO ICONO DE SKIP ---
-    FastForward: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 19 22 12 13 5 13 19" /><polygon points="2 19 11 12 2 5 2 19" /></svg>
+    // --- ICONO SIMPLE (SOLO LINEAS, SIN RELLENOS RAROS) ---
+    FastForward: (props) => <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="13 19 22 12 13 5"/><polyline points="2 19 11 12 2 5"/></svg>
 };
 
 const { 
@@ -97,16 +97,17 @@ const PieceCard = ({ piece, materials, isCompleted, onCraft, onSkip, t }) => {
             
             {!isCompleted && (
                 <div className="flex items-center gap-2">
-                    {/* --- NUEVO BOTÓN DE SALTAR (SKIP) --- */}
+                    {/* --- NUEVO BOTÓN DE SALTAR (ESTILO BOTÓN CON TEXTO) --- */}
                     <div 
                         onClick={(e) => {
-                            e.stopPropagation(); // Evita que se abra el acordeón
+                            e.stopPropagation(); 
                             onSkip();
                         }}
-                        className="p-1.5 rounded-md hover:bg-slate-800 text-slate-500 hover:text-blue-400 transition-colors mr-1"
+                        className="flex items-center gap-1 px-2 py-1 rounded border border-slate-700 bg-slate-800/50 hover:bg-slate-700 text-slate-400 hover:text-white text-[10px] font-bold uppercase transition-all mr-2"
                         title={t('btn_skip_piece')}
                     >
-                        <FastForward className="w-4 h-4" />
+                        <CheckCircle2 className="w-3 h-3" />
+                        <span>{t('btn_skip_piece')}</span>
                     </div>
 
                     {canCraft && !isOpen && <span className="text-[10px] bg-blue-600 text-white px-1.5 py-0.5 rounded font-bold animate-pulse">{t('piece_ready')}</span>}
@@ -338,7 +339,7 @@ const MaterialCard = ({ mat, updateStock, setStock, getGlobalMissing, t }) => {
             {/* Botón Restar */}
             <button onClick={() => updateStock(mat.id, -1)} className="px-3 py-1 text-slate-400 hover:bg-slate-800 hover:text-white rounded-l transition-colors">-</button>
             
-            {/* INPUT NUMÉRICO MEJORADO */}
+            {/* INPUT NUMÉRICO MEJORADO (CON ONKEYDOWN AGRESIVO) */}
             <input 
                 type="number"
                 className="w-16 text-center font-mono text-white font-bold bg-transparent outline-none border-none appearance-none"
@@ -346,8 +347,13 @@ const MaterialCard = ({ mat, updateStock, setStock, getGlobalMissing, t }) => {
                 placeholder="0"
                 onChange={(e) => setStock(mat.id, e.target.value)}
                 onFocus={(e) => e.target.select()}
+                
+                // --- BLOQUEO TOTAL DE TECLAS NO NUMÉRICAS ---
                 onKeyDown={(e) => {
+                    // Permitir: borrar, tab, flechas, inicio, fin, enter
                     if (['Backspace', 'Delete', 'Tab', 'ArrowLeft', 'ArrowRight', 'Home', 'End', 'Enter'].includes(e.key)) return;
+                    
+                    // Bloquear todo lo que no sea número
                     if (!/[0-9]/.test(e.key)) {
                         e.preventDefault();
                     }
@@ -558,6 +564,7 @@ function App() {
         ));
     };
 
+    // --- NUEVA FUNCIÓN: Permite escribir el número directo ---
     const setStock = (id, value) => {
         const newStock = Math.max(0, parseInt(value) || 0);
         setMaterials(prev => prev.map(m => 
@@ -565,16 +572,22 @@ function App() {
         ));
     };
 
+    // --- NUEVA FUNCIÓN: Completar SKIN entero ---
     const completeWholeSkin = (heroId, skinId) => {
         const hero = heroes.find(h => h.id === heroId);
         const skin = hero.skins.find(s => s.id === skinId);
         
         requestConfirmation(t('msg_complete_set'), () => {
             const newCompleted = { ...completedPieces };
+            
+            // Marcar todas las piezas como hechas
             skin.pieces.forEach(p => {
                 newCompleted[`${heroId}_${skinId}_${p.id}`] = true;
             });
+            
             setCompletedPieces(newCompleted);
+            
+            // Avanzar nivel (si no es el último)
             setTimeout(() => {
                 setHeroProgress(prev => ({
                     ...prev,
@@ -729,6 +742,7 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-2">
                 
+                {/* CHECKBOX: Faltantes */}
                 <label className="flex items-center space-x-2 cursor-pointer bg-slate-800 px-3 py-1.5 rounded hover:bg-slate-700 transition-colors border border-slate-700">
                     <input 
                         type="checkbox" 
@@ -753,8 +767,8 @@ function App() {
 
                 <Filter className="w-4 h-4 text-slate-500" />
                 {[
-                    { id: 'category', label: 'CAT' },
-                    { id: 'rarity', label: 'RAR' },
+                    { id: 'category', label: 'CATEGORY' },
+                    { id: 'rarity', label: 'RARITY' },
                     { id: 'alpha', label: 'A-Z' },
                 ].map(opt => (
                     <button
